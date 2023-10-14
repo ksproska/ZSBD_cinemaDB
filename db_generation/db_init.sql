@@ -34,3 +34,13 @@ CREATE TABLE Seat(
 	fk_room INTEGER
 	PRIMARY KEY()
 );
+CREATE TABLE Movie(
+	id_movie INTEGER
+	name CHAR
+	premiere date
+	duration INTEGER
+	is_imax BOOLEAN
+	fk_language INTEGER
+	fk_age_restriction CHAR
+	PRIMARY KEY()
+);

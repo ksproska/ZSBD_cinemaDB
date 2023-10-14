@@ -16,6 +16,10 @@ class AgeRestriction(AddableToDatabase):
             all_objects.append(AgeRestriction(name))
         return all_objects
 
+    @property
+    def primary_key_value(self):
+        return self.age_restriction_name
+
 
 class User(ObjectWithCounter, AddableToDatabase):
     faker = Faker()
@@ -45,6 +49,10 @@ class Language(AddableToDatabase, ObjectWithCounter):
         for name in language_names:
             all_objects.append(Language(name))
         return all_objects
+
+    @property
+    def primary_key_value(self):
+        return self.id_language
 
 
 class Room(ObjectWithCounter, AddableToDatabase):
