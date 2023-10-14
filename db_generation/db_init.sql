@@ -53,3 +53,12 @@ CREATE TABLE MovieVersion(
 	fk_movie INTEGER
 	PRIMARY KEY()
 );
+CREATE TABLE Show(
+	id_show INTEGER
+	start_hour INTEGER
+	start_minute INTEGER
+	date DATE
+	fk_room INTEGER
+	fk_movieVersion INTEGER
+	PRIMARY KEY()
+);
