@@ -1,4 +1,5 @@
 import random
+import unittest
 
 from faker import Faker
 
@@ -25,3 +26,21 @@ class Room(ObjectWithCounter, AddableToDatabase):
     @classmethod
     def get_all_objects(cls, size):
         return [Room() for _ in range(size)]
+
+
+class TestRoom(unittest.TestCase):
+    def test_get_all_objects(self):
+        number_of_rooms = 20
+        rooms = Room.get_all_objects(number_of_rooms)
+        self.assertEqual(len(rooms), number_of_rooms)
+
+        ids = [r.primary_key_value for r in rooms]
+        self.assertEqual(len(ids), len(set(ids)))
+
+        for room in rooms:
+            self.assertIsNotNone(room.room_sign.value)
+            self.assertIsNotNone(room.floor_number.value)
+            self.assertIsNotNone(room.imax_capable.value)
+            self.assertIsNotNone(room.wheelchair_availability.value)
+            self.assertIsNotNone(room.sponsor.value)
+            self.assertIsNotNone(room.capable_3D.value)

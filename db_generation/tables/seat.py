@@ -1,4 +1,5 @@
 import random
+import unittest
 
 from db_generation.parent_classes import ObjectWithCounter, AddableToDatabase
 from db_generation.tables.room import Room
@@ -6,7 +7,9 @@ from db_generation.types import INTEGER, BOOLEAN
 
 
 class Seat(ObjectWithCounter, AddableToDatabase):
-    rooms_seats = {}
+    numb_of_rows = 15
+    numb_of_seats_in_row = 24
+    rooms = set()
 
     def __init__(self, room: Room, row, number):
         self.id_seat = INTEGER(Seat.next())
@@ -15,14 +18,17 @@ class Seat(ObjectWithCounter, AddableToDatabase):
         self.is_vip_seat = BOOLEAN(bool(random.getrandbits(1)))
         self.fk_room = room.primary_key_value
 
+        self.rooms.add(room)
+
     @classmethod
     def get_all_objects_single_room(cls, room: Room):
-        rows_numb = 15
-        seats_numb = 24
         all_objects = []
-        for row in range(rows_numb):
-            for seat in range(seats_numb):
-                all_objects.append(Seat(room, row + 1, seat + 1))
+        for row in range(cls.numb_of_rows):
+            row_numb = row + 1
+            for seat in range(cls.numb_of_seats_in_row):
+                seat_numb = seat + 1
+                seat = Seat(room, row_numb, seat_numb)
+                all_objects.append(seat)
         return all_objects
 
     @classmethod
@@ -36,3 +42,28 @@ class Seat(ObjectWithCounter, AddableToDatabase):
     @property
     def primary_key_value(self):
         return self.id_seat
+
+    def get_room(self) -> Room:
+        for room in self.rooms:
+            if room.primary_key_value == self.fk_room:
+                return room
+        return None
+
+
+class TestSeat(unittest.TestCase):
+    def test_get_all_objects(self):
+        rooms = Room.get_all_objects(20)
+        seats = Seat.get_all_objects(rooms)
+
+        self.assertEqual(len(rooms) * Seat.numb_of_rows * Seat.numb_of_seats_in_row, len(seats))
+
+        ids = [s.primary_key_value for s in seats]
+        self.assertEqual(len(ids), len(set(ids)))
+
+        for seat in seats:
+            self.assertIsNotNone(seat.row.value)
+            self.assertIsNotNone(seat.number.value)
+            self.assertIsNotNone(seat.is_vip_seat.value)
+            self.assertIsNotNone(seat.fk_room.value)
+
+            self.assertIsNotNone(seat.get_room())
