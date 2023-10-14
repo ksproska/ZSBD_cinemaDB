@@ -26,3 +26,11 @@ CREATE TABLE Room(
 	capable_3D BOOLEAN
 	PRIMARY KEY()
 );
+CREATE TABLE Seat(
+	id_seat INTEGER
+	row INTEGER
+	number INTEGER
+	is_vip_seat BOOLEAN
+	fk_room INTEGER
+	PRIMARY KEY()
+);

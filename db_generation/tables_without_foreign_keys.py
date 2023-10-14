@@ -59,6 +59,10 @@ class Room(ObjectWithCounter, AddableToDatabase):
         self.sponsor = CHAR(self.faker.company())
         self.capable_3D = BOOLEAN(bool(random.getrandbits(1)))
 
+    @property
+    def primary_key_value(self):
+        return self.id_room
+
     @classmethod
     def get_all_objects(cls, size):
         return [Room() for _ in range(size)]
