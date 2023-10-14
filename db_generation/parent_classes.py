@@ -26,8 +26,8 @@ class AddableToDatabase:
     def create_table(self):
         output = f"CREATE TABLE {self.__class__.__name__}(\n"
         for key, value in self.__dict__.items():
-            output += f"\t{key} {type(value).__name__}\n"
-        output += "\tPRIMARY KEY()\n"
+            output += f"\t{key} {type(value).__name__},\n"
+        output += f"\tPRIMARY KEY({list(self.__dict__.keys())[0]})\n"
         output += ");\n"
         return output
 

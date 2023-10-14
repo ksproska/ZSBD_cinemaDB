@@ -24,10 +24,10 @@ class BOOLEAN:
 
 class CHAR:
     def __init__(self, value):
-        self.value = value
+        self.value = value.replace("'", "")
 
     def __str__(self):
-        return f"\"{self.value}\""
+        return f"'{self.value}'"
 
 
 class DATE:

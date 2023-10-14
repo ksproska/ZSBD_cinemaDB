@@ -5,7 +5,7 @@ from db_generation.tables.language import Language
 from db_generation.tables.seat import Seat
 from db_generation.tables.show import Show
 from db_generation.tables.ticket import Ticket
-from db_generation.tables.user import User
+from db_generation.tables.cinema_user import CinemaUser
 from db_generation.tables.age_restriction import AgeRestriction
 
 
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     movies = Movie.get_all_objects(10, languages, age_restrictions)
     movie_versions = MovieVersion.get_all_objects(movies, languages)
     shows = Show.get_all_objects(2, rooms, movie_versions)
-    users = User.get_all_objects(6)
+    users = CinemaUser.get_all_objects(6)
     tickets = Ticket.get_all_objects(seats, shows, users)
 
     all_object_tables = [

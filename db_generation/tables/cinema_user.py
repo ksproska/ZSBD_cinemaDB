@@ -8,13 +8,13 @@ from db_generation.parent_classes import ObjectWithCounter, AddableToDatabase
 from db_generation.types import INTEGER, CHAR, DATE
 
 
-class User(ObjectWithCounter, AddableToDatabase):
+class CinemaUser(ObjectWithCounter, AddableToDatabase):
     faker = Faker()
     min_age = '-18y'
     max_age = '-55y'
 
     def __init__(self):
-        self.id_user = INTEGER(User.next())
+        self.id_user = INTEGER(CinemaUser.next())
         self.name = CHAR(self.faker.first_name())
         self.surname = CHAR(self.faker.last_name())
         self.email = CHAR(self.faker.email())
@@ -23,18 +23,18 @@ class User(ObjectWithCounter, AddableToDatabase):
 
     @classmethod
     def get_all_objects(cls, size):
-        return [User() for _ in range(size)]
+        return [CinemaUser() for _ in range(size)]
 
     @property
     def primary_key_value(self):
         return self.id_user
 
 
-class TestUser(unittest.TestCase):
+class TestCinemaUser(unittest.TestCase):
     def test_get_all_objects(self):
         number_of_users = 100
         now = datetime.datetime.now().date()
-        users = User.get_all_objects(number_of_users)
+        users = CinemaUser.get_all_objects(number_of_users)
         self.assertEqual(len(users), number_of_users)
 
         ids = [u.primary_key_value for u in users]

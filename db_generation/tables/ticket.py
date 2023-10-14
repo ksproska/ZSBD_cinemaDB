@@ -6,7 +6,7 @@ from dateutil.relativedelta import relativedelta
 from db_generation.parent_classes import ObjectWithCounter, AddableToDatabase
 from db_generation.tables.seat import Seat
 from db_generation.tables.show import Show
-from db_generation.tables.user import User
+from db_generation.tables.cinema_user import CinemaUser
 from db_generation.common import get_primary_key_from_nullable
 from db_generation.types import INTEGER, FLOAT, TIMESTAMP
 
@@ -25,7 +25,7 @@ class Ticket(ObjectWithCounter, AddableToDatabase):
         "3D_imax_True": 34
     }
 
-    def __init__(self, seat: Seat, show: Show, user: User | None):
+    def __init__(self, seat: Seat, show: Show, user: CinemaUser | None):
         self.id_ticket: int = INTEGER(Ticket.next())
         if seat.is_vip_seat:
             available_discount_types = [v for k, v in self.discounts.items() if "vip" in k]
@@ -43,9 +43,9 @@ class Ticket(ObjectWithCounter, AddableToDatabase):
 
         self.base_price = FLOAT(price)
         purchase_timestamp = datetime(
-            show.date.value.year,
-            show.date.value.month,
-            show.date.value.day,
+            show.show_date.value.year,
+            show.show_date.value.month,
+            show.show_date.value.day,
             show.start_hour.value,
             show.start_minute.value
         ) - relativedelta(minutes=random.randint(0, 48 * 60))
@@ -55,7 +55,7 @@ class Ticket(ObjectWithCounter, AddableToDatabase):
         self.fk_user = get_primary_key_from_nullable(user)
 
     @classmethod
-    def get_all_objects(cls, seats: list[Seat], shows: list[Show], users: list[User]):
+    def get_all_objects(cls, seats: list[Seat], shows: list[Show], users: list[CinemaUser]):
         all_objects = []
         for show in shows:
             room = show.get_room()

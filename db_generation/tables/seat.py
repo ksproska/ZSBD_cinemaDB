@@ -13,8 +13,8 @@ class Seat(ObjectWithCounter, AddableToDatabase):
 
     def __init__(self, room: Room, row, number):
         self.id_seat = INTEGER(Seat.next())
-        self.row = INTEGER(row)
-        self.number = INTEGER(number)
+        self.seat_row = INTEGER(row)
+        self.seat_number = INTEGER(number)
         self.is_vip_seat = BOOLEAN(bool(random.getrandbits(1)))
         self.fk_room = room.primary_key_value
 
@@ -61,8 +61,8 @@ class TestSeat(unittest.TestCase):
         self.assertEqual(len(ids), len(set(ids)))
 
         for seat in seats:
-            self.assertIsNotNone(seat.row.value)
-            self.assertIsNotNone(seat.number.value)
+            self.assertIsNotNone(seat.seat_row.value)
+            self.assertIsNotNone(seat.seat_number.value)
             self.assertIsNotNone(seat.is_vip_seat.value)
             self.assertIsNotNone(seat.fk_room.value)
 
