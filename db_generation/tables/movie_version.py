@@ -1,13 +1,11 @@
 import random
 import unittest
-from pprint import pprint
 
+from db_generation.common import get_primary_key_from_nullable
 from db_generation.parent_classes import ObjectWithCounter, AddableToDatabase
-from db_generation.read_imdb_csv import get_movies_csv
 from db_generation.tables.age_restriction import AgeRestriction
 from db_generation.tables.language import Language
 from db_generation.tables.movie import Movie
-from db_generation.common import get_primary_key_from_nullable
 from db_generation.types import INTEGER, CHAR
 
 
@@ -75,7 +73,6 @@ class TestMovieVersion(unittest.TestCase):
     def test_get_all_objects(self):
         age_restrictions = AgeRestriction.get_all_objects()
         languages = Language.get_all_objects()
-        Movie.imdb_df = get_movies_csv("./../")
         number_of_movies = 100
         movies = Movie.get_all_objects(number_of_movies, languages, age_restrictions)
         movie_versions = MovieVersion.get_all_objects(movies, languages)

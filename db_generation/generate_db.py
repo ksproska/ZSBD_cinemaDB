@@ -9,7 +9,7 @@ from db_generation.tables.user import User
 from db_generation.tables.age_restriction import AgeRestriction
 
 
-def main():
+if __name__ == '__main__':
     rooms = Room.get_all_objects(3)
     seats = Seat.get_all_objects(rooms)
     age_restrictions = AgeRestriction.get_all_objects()
@@ -20,17 +20,19 @@ def main():
     users = User.get_all_objects(6)
     tickets = Ticket.get_all_objects(seats, shows, users)
 
-    [print(x) for x in rooms]
-    [print(x) for x in seats]
+    all_object_tables = [
+        rooms,
+        seats,
+        age_restrictions,
+        languages,
+        movies,
+        movie_versions,
+        shows,
+        users,
+        tickets
+    ]
 
-    [print(x) for x in age_restrictions]
-    [print(x) for x in languages]
-    [print(x) for x in movies]
-    [print(x) for x in movie_versions]
-
-    [print(x) for x in shows]
-    [print(x) for x in tickets]
-
-
-if __name__ == '__main__':
-    main()
+    with open("output.sql", "w", encoding="utf8") as f:
+        for objs in all_object_tables:
+            for obj in objs:
+                f.write(obj.sql_addable + "\n")

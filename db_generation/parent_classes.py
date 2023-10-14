@@ -14,9 +14,14 @@ class AddableToDatabase:
         """
         example: "INSERT INTO ClassName (Atr_1, Atr_2) VALUES (%(Atr_1)s, %(Atr_2)s)"
         """
-        keys = ', '.join(self.__dict__.keys())
-        keys_insertable = ', '.join([f'%({key})s' for key in self.__dict__.keys()])
-        return f'INSERT INTO {self.__class__.__name__} ({keys}) VALUES ({keys_insertable})'
+        keys = []
+        values = []
+        for k, v in self.__dict__.items():
+            keys.append(f"{k}")
+            values.append(f"{v}")
+        keys_joined = ", ".join(keys)
+        values_joined = ", ".join(values)
+        return f'INSERT INTO {self.__class__.__name__} ({keys_joined}) VALUES ({values_joined});'
 
     def create_table(self):
         output = f"CREATE TABLE {self.__class__.__name__}(\n"

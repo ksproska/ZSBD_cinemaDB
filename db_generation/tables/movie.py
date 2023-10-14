@@ -12,13 +12,10 @@ from db_generation.types import INTEGER, CHAR, DATE, BOOLEAN
 
 
 class Movie(ObjectWithCounter, AddableToDatabase):
-    imdb_df = None
+    imdb_df = get_movies_csv()
     faker = Faker()
 
     def __init__(self, language: Language, age_restriction: AgeRestriction):
-        if self.imdb_df is None:
-            self.imdb_df = get_movies_csv()
-
         self.id_movie = INTEGER(Movie.next())
         movie_df = self.imdb_df.iloc[self.id_movie.value]
 
@@ -53,7 +50,6 @@ class TestMovie(unittest.TestCase):
         languages = Language.get_all_objects()
         age_restrictions = AgeRestriction.get_all_objects()
         number_of_movies = 100
-        Movie.imdb_df = get_movies_csv("./../")
 
         movies = Movie.get_all_objects(number_of_movies, languages, age_restrictions)
         self.assertEqual(len(movies), number_of_movies)

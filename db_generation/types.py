@@ -3,7 +3,7 @@ class INTEGER:
         self.value = value
 
     def __str__(self):
-        return f"{self.value}"
+        return "NULL" if self.value is None else f"{self.value}"
 
 
 class NUMBER:
@@ -27,7 +27,7 @@ class CHAR:
         self.value = value
 
     def __str__(self):
-        return f"{self.value}"
+        return f"\"{self.value}\""
 
 
 class DATE:
@@ -43,7 +43,7 @@ class TIMESTAMP:
         self.value = value
 
     def __str__(self):
-        return f"{self.value}"
+        return f"timestamp '{self.value}'"
 
 
 class FLOAT:
