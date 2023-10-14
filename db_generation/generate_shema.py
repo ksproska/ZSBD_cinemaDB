@@ -1,7 +1,14 @@
 import datetime
 
-from db_generation.tables_with_foreign_keys import Seat, Movie, MovieVersion, Show, Ticket
-from db_generation.tables_without_foreign_keys import AgeRestriction, Language, User, Room
+from db_generation.tables.ticket import Ticket
+from db_generation.tables.show import Show
+from db_generation.tables.movie_version import MovieVersion
+from db_generation.tables.movie import Movie
+from db_generation.tables.seat import Seat
+from db_generation.tables.room import Room
+from db_generation.tables.language import Language
+from db_generation.tables.user import User
+from db_generation.tables.age_restriction import AgeRestriction
 
 age_restriction = AgeRestriction.get_all_objects()[0]
 language = Language.get_all_objects()[0]
