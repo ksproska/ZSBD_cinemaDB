@@ -1,1 +1,3 @@
 /.idea/
+/db_generation/test.py
+/db_generation/output.sql
