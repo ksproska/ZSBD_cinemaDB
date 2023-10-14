@@ -1,6 +1,6 @@
 import datetime
 
-from db_generation.tables_with_foreign_keys import Seat, Movie, MovieVersion, Show
+from db_generation.tables_with_foreign_keys import Seat, Movie, MovieVersion, Show, Ticket
 from db_generation.tables_without_foreign_keys import AgeRestriction, Language, User, Room
 
 age_restriction = AgeRestriction.get_all_objects()[0]
@@ -11,6 +11,7 @@ seat = Seat.get_all_objects_single_room(room)[0]
 movie = Movie(language, age_restriction)
 movie_version = MovieVersion.get_all_objects_for_movie(movie, [language])[0]
 show = Show(datetime.datetime.now(), room, movie_version)
+ticket = Ticket(seat, show, user)
 
 all_tables = [
     age_restriction,
@@ -20,7 +21,8 @@ all_tables = [
     seat,
     movie,
     movie_version,
-    show
+    show,
+    ticket
 ]
 
 with open("db_init.sql", "w", encoding="utf8") as f:

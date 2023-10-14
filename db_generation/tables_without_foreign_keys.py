@@ -36,6 +36,10 @@ class User(ObjectWithCounter, AddableToDatabase):
     def get_all_objects(cls, size):
         return [User() for _ in range(size)]
 
+    @property
+    def primary_key_value(self):
+        return self.id_user
+
 
 class Language(AddableToDatabase, ObjectWithCounter):
     def __init__(self, language_name: str):

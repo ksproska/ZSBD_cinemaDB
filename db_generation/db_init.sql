@@ -62,3 +62,13 @@ CREATE TABLE Show(
 	fk_movieVersion INTEGER
 	PRIMARY KEY()
 );
+CREATE TABLE Ticket(
+	id_ticket INTEGER
+	discount FLOAT
+	base_price FLOAT
+	purchase TIMESTAMP
+	fk_seat INTEGER
+	fk_show INTEGER
+	fk_user INTEGER
+	PRIMARY KEY()
+);

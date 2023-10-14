@@ -5,8 +5,8 @@ from dateutil.relativedelta import relativedelta
 from faker import Faker
 
 from db_generation.parent_classes import ObjectWithCounter, AddableToDatabase
-from db_generation.tables_without_foreign_keys import Room, AgeRestriction, Language
-from db_generation.types import BOOLEAN, INTEGER, CHAR, DATE
+from db_generation.tables_without_foreign_keys import Room, AgeRestriction, Language, User
+from db_generation.types import BOOLEAN, INTEGER, CHAR, DATE, FLOAT, TIMESTAMP
 import pandas as pd
 
 
@@ -37,6 +37,10 @@ class Seat(ObjectWithCounter, AddableToDatabase):
             seats = Seat.get_all_objects_single_room(room)
             all_objects.extend(seats)
         return all_objects
+
+    @property
+    def primary_key_value(self):
+        return self.id_seat
 
 
 class Movie(ObjectWithCounter, AddableToDatabase):
@@ -134,6 +138,8 @@ class Show(ObjectWithCounter, AddableToDatabase):
     oldest_date = (datetime.today() - relativedelta(years=5)).date()
     newest_date = (datetime.today() + relativedelta(months=1)).date()
     next_not_used_date = oldest_date
+    movie_versions = set()
+    rooms = set()
 
     def __init__(self, start_time: datetime, room: Room, movie_version: MovieVersion):
         self.id_show = INTEGER(Show.next())
@@ -142,6 +148,9 @@ class Show(ObjectWithCounter, AddableToDatabase):
         self.date = DATE(start_time.date())
         self.fk_room = room.primary_key_value
         self.fk_movieVersion = movie_version.primary_key_value
+
+        self.rooms.add(room)
+        self.movie_versions.add(movie_version)
 
     @classmethod
     def get_all_objects(cls, number_of_days: int, rooms: list[Room], movie_versions: list[MovieVersion]):
@@ -153,7 +162,8 @@ class Show(ObjectWithCounter, AddableToDatabase):
         return all_objects
 
     @classmethod
-    def get_all_objects_for_single_day(cls, currently_used_date: date, rooms: list[Room], movie_versions: list[MovieVersion]):
+    def get_all_objects_for_single_day(cls, currently_used_date: date, rooms: list[Room],
+                                       movie_versions: list[MovieVersion]):
         all_objects = []
         for room in rooms:
             shows = cls.set_program_for_room_for_date(currently_used_date, movie_versions, room)
@@ -173,18 +183,94 @@ class Show(ObjectWithCounter, AddableToDatabase):
             date_with_time += relativedelta(minutes=round(movie.duration.value + 30, -1))
         return all_objects
 
+    @property
+    def primary_key_value(self):
+        return self.id_show
+
+    def get_movie_version(self) -> MovieVersion:
+        for movie_version in self.movie_versions:
+            if movie_version.primary_key_value == self.fk_movieVersion:
+                return movie_version
+        return None
+
+    def get_room(self) -> Room:
+        for room in self.rooms:
+            if room.primary_key_value == self.fk_room:
+                return room
+        return None
+
+
+class Ticket(ObjectWithCounter, AddableToDatabase):
+    discounts = {
+        "vip": 0,
+        "normal": 0.1,
+        "vip_student": 0.15,
+        "student": 0.2
+    }
+    prices = {
+        "2D_imax_False": 30,
+        "2D_imax_True": 33,
+        "3D_imax_False": 37,
+        "3D_imax_True": 34
+    }
+
+    def __init__(self, seat: Seat, show: Show, user: User | None):
+        self.id_ticket: int = INTEGER(Ticket.next())
+        if seat.is_vip_seat:
+            available_discount_types = [v for k, v in self.discounts.items() if "vip" in k]
+        else:
+            available_discount_types = [v for k, v in self.discounts.items() if "vip" not in k]
+        self.discount = FLOAT(random.choice(available_discount_types))
+
+        movie_version = show.get_movie_version()
+        dimension = movie_version.dimension.value
+        is_imax = movie_version.get_movie().is_imax.value
+        if is_imax and random.random() < 0.4:
+            is_imax = False
+
+        price = self.prices[f"{dimension}_imax_{is_imax}"]
+
+        self.base_price = FLOAT(price)
+        purchase_timestamp = datetime(
+            show.date.value.year,
+            show.date.value.month,
+            show.date.value.day,
+            show.start_hour.value,
+            show.start_minute.value
+        ) - relativedelta(minutes=random.randint(0, 48 * 60))
+        self.purchase = TIMESTAMP(purchase_timestamp)
+        self.fk_seat = seat.primary_key_value
+        self.fk_show = show.primary_key_value
+        self.fk_user = get_primary_key_from_nullable(user)
+
+    @classmethod
+    def get_all_objects(cls, seats: list[Seat], shows: list[Show], users: list[User]):
+        all_objects = []
+        for show in shows:
+            room = show.get_room()
+            seats_in_room = [s for s in seats if s.fk_room == room.primary_key_value]
+            for seat in seats_in_room:
+                user = None
+                if random.random() > 0.4:
+                    user = random.choice(users)
+                if random.random() > 0.3:
+                    all_objects.append(Ticket(seat, show, user))
+        return all_objects
+
 
 def main():
     rooms = Room.get_all_objects(3)
-    room_seats = Seat.get_all_objects(rooms)
+    seats = Seat.get_all_objects(rooms)
     age_restrictions = AgeRestriction.get_all_objects()
     languages = Language.get_all_objects()
     movies = Movie.get_all_objects(10, languages, age_restrictions)
     movie_versions = MovieVersion.get_all_objects(movies, languages)
     shows = Show.get_all_objects(2, rooms, movie_versions)
+    users = User.get_all_objects(6)
+    tickets = Ticket.get_all_objects(seats, shows, users)
 
     [print(x) for x in rooms]
-    [print(x) for x in room_seats]
+    [print(x) for x in seats]
 
     [print(x) for x in age_restrictions]
     [print(x) for x in languages]
@@ -192,6 +278,7 @@ def main():
     [print(x) for x in movie_versions]
 
     [print(x) for x in shows]
+    [print(x) for x in tickets]
 
 
 if __name__ == '__main__':
