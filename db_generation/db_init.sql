@@ -37,10 +37,19 @@ CREATE TABLE Seat(
 CREATE TABLE Movie(
 	id_movie INTEGER
 	name CHAR
-	premiere date
+	premiere DATE
 	duration INTEGER
 	is_imax BOOLEAN
 	fk_language INTEGER
 	fk_age_restriction CHAR
+	PRIMARY KEY()
+);
+CREATE TABLE MovieVersion(
+	id_movie_version INTEGER
+	dimension CHAR
+	fk_dubbing_language INTEGER
+	fk_subtitles_language INTEGER
+	fk_voice_over_language INTEGER
+	fk_movie INTEGER
 	PRIMARY KEY()
 );
