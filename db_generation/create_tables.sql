@@ -10,32 +10,32 @@ create table CinemaUser
     surname  varchar2(10) not null,
     email    varchar2(50) not null,
     password varchar2(20) not null,
-    birth    date not null
+    birth    date         not null
 );
 
 create table Room
 (
     id_room                 number primary key,
-    room_sign               varchar2(20) not null,
-    floor_number            number not null,
-    imax_capable            varchar2(1) check (imax_capable in ('Y', 'N')) not null,
+    room_sign               varchar2(20)                                              not null,
+    floor_number            number                                                    not null,
+    imax_capable            varchar2(1) check (imax_capable in ('Y', 'N'))            not null,
     wheelchair_availability varchar2(1) check (wheelchair_availability in ('Y', 'N')) not null,
     sponsor                 varchar2(50),
-    capable_3D           varchar2(1) check (capable_3D in ('Y', 'N')) not null
+    capable_3D              varchar2(1) check (capable_3D in ('Y', 'N'))              not null
 );
 
 create table Language
 (
-    id_language varchar2(10) primary key,
+    id_language   varchar2(10) primary key,
     language_name varchar2(50) not null
 );
 
 create table Movie
 (
     id_movie           number primary key,
-    name               varchar2(100) not null,
-    premiere      date,
-    duration           number not null,
+    name               varchar2(100)                             not null,
+    premiere           date,
+    duration           number                                    not null,
     is_imax            varchar2(1) check (is_imax in ('Y', 'N')) not null,
     fk_age_restriction varchar2(50),
     fk_language        varchar2(10),
@@ -68,7 +68,7 @@ create table MovieVersion
 create table Show
 (
     id_show          number primary key,
-    show_date        date not null,
+    show_date        date   not null,
     start_hour       number not null,
     start_minute     number not null,
     fk_room          number,
@@ -83,8 +83,8 @@ create table Show
 create table Seat
 (
     id_seat           number primary key,
-    seat_row          number not null,
-    seat_number       number not null,
+    seat_row          number                                          not null,
+    seat_number       number                                          not null,
     is_vip_seat       varchar2(1) check ( is_VIP_seat in ('Y', 'N') ) not null,
     fk_room           number,
     fk_connected_seat number,
@@ -97,13 +97,13 @@ create table Seat
 
 create table Ticket
 (
-    id_ticket number primary key,
-    discount  float,
-    base_price     float not null,
-    purchase  timestamp,
-    fk_seat   number,
-    fk_show   number,
-    fk_user   number,
+    id_ticket  number primary key,
+    discount   float,
+    base_price float not null,
+    purchase   timestamp,
+    fk_seat    number,
+    fk_show    number,
+    fk_user    number,
 
     foreign key (fk_seat)
         references Seat (id_seat),

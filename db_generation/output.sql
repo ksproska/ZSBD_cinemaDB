@@ -5498,3 +5498,4 @@ INSERT INTO Ticket (id_ticket, discount, base_price, purchase, fk_seat, fk_show,
 INSERT INTO Ticket (id_ticket, discount, base_price, purchase, fk_seat, fk_show, fk_user) VALUES (4655, 0, 33, timestamp '2018-10-16 00:38:00', 772, 26, NULL);
 INSERT INTO Ticket (id_ticket, discount, base_price, purchase, fk_seat, fk_show, fk_user) VALUES (4656, 0.15, 33, timestamp '2018-10-16 19:23:00', 773, 26, NULL);
 INSERT INTO Ticket (id_ticket, discount, base_price, purchase, fk_seat, fk_show, fk_user) VALUES (4657, 0, 30, timestamp '2018-10-15 01:46:00', 774, 26, 2);
+commit work;
