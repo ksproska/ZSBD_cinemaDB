@@ -24,7 +24,7 @@ class Show(ObjectWithCounter, AddableToDatabase):
         self.start_minute = INTEGER(start_time.minute)
         self.show_date = DATE(start_time.date())
         self.fk_room = room.primary_key_value
-        self.fk_movieVersion = movie_version.primary_key_value
+        self.fk_movie_version = movie_version.primary_key_value
 
         self.rooms.add(room)
         self.movie_versions.add(movie_version)
@@ -66,7 +66,7 @@ class Show(ObjectWithCounter, AddableToDatabase):
 
     def get_movie_version(self) -> MovieVersion:
         for movie_version in self.movie_versions:
-            if movie_version.primary_key_value == self.fk_movieVersion:
+            if movie_version.primary_key_value == self.fk_movie_version:
                 return movie_version
         return None
 
