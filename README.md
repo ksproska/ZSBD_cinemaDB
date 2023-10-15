@@ -2,7 +2,8 @@
 
 ## Generating database
 To generate database go to file [generate_db.py](db_generation/generate_db.py) and run the script.
-Output should appear in the [db_generation](db_generation) directory in file [output.sql](db_generation/output.sql).
+Output should appear in the [db_generation](db_generation) directory in file [output.sql](db_generation/output.sql)
+along with overall summary located in [output.csv](db_generation/output.csv).
 
 ## Manifest (in polish)
 Baza danych służy wsparciu obsługi kina. Kino to organizuje seanse filmów w swoich salach
