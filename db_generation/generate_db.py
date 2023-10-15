@@ -1,25 +1,31 @@
+import pandas as pd
 from db_generation.generate_shema import generate_schema
+from db_generation.tables.age_restriction import AgeRestriction
+from db_generation.tables.cinema_user import CinemaUser
+from db_generation.tables.language import Language
 from db_generation.tables.movie import Movie
 from db_generation.tables.movie_version import MovieVersion
 from db_generation.tables.room import Room
-from db_generation.tables.language import Language
 from db_generation.tables.seat import Seat
 from db_generation.tables.show import Show
 from db_generation.tables.ticket import Ticket
-from db_generation.tables.cinema_user import CinemaUser
-from db_generation.tables.age_restriction import AgeRestriction
-import pandas as pd
 
 
 def generate_db():
-    rooms = Room.get_all_objects(3)
+    number_of_rooms = 5
+    number_of_movies = 50
+    number_of_days_to_create_shows_for = 5
+    number_of_users = 50
+
+    rooms = Room.get_all_objects(number_of_rooms)
     seats = Seat.get_all_objects(rooms)
     age_restrictions = AgeRestriction.get_all_objects()
     languages = Language.get_all_objects()
-    movies = Movie.get_all_objects(10, languages, age_restrictions)
+    movies = Movie.get_all_objects(number_of_movies, languages, age_restrictions)
     movie_versions = MovieVersion.get_all_objects(movies, languages)
-    shows = Show.get_all_objects(2, rooms, movie_versions)
-    users = CinemaUser.get_all_objects(6)
+    shows = Show.get_all_objects(number_of_days_to_create_shows_for, rooms, movie_versions)
+    users = CinemaUser.get_all_objects(number_of_users)
+    print("Creating tickets")
     tickets = Ticket.get_all_objects(seats, shows, users)
 
     all_object_tables = [
@@ -45,8 +51,10 @@ def generate_db():
         for objs in all_object_tables:
             f.write(f"{objs[0].table_name},{len(objs)}\n")
 
-    df = pd.read_csv("output.csv")
+    df = pd.read_csv("output.csv").sort_values("Count")
     print(df)
+
+    print("\nSum: ", df["Count"].sum())
 
 
 if __name__ == '__main__':

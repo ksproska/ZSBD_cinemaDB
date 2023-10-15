@@ -81,7 +81,6 @@ class TestMovieVersion(unittest.TestCase):
         self.assertGreater(len(movie_versions), number_of_movies)
 
         for movie_version in movie_versions:
-            print(movie_version)
             is_dubbing = movie_version.fk_dubbing_language.value is not None
             is_voice_over = movie_version.fk_voice_over_language.value is not None
             self.assertTrue(not (is_dubbing and is_voice_over))
