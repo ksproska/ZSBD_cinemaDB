@@ -1,114 +1,114 @@
-create table AgeRestriction
+CREATE TABLE AgeRestrictions
 (
-    age_restriction_name varchar2(50) primary key
+    age_restriction_name VARCHAR2(50) PRIMARY KEY
 );
 
-create table CinemaUser
+CREATE TABLE CinemaUsers
 (
-    id_user  number primary key,
-    name     varchar2(10) not null,
-    surname  varchar2(10) not null,
-    email    varchar2(50) not null,
-    password varchar2(20) not null,
-    birth    date         not null
+    id_user  NUMBER PRIMARY KEY,
+    name     VARCHAR2(10) NOT NULL,
+    surname  VARCHAR2(10) NOT NULL,
+    email    VARCHAR2(50) NOT NULL,
+    password VARCHAR2(20) NOT NULL,
+    birth    DATE         NOT NULL
 );
 
-create table Room
+CREATE TABLE Rooms
 (
-    id_room                 number primary key,
-    room_sign               varchar2(20)                                              not null,
-    floor_number            number                                                    not null,
-    imax_capable            varchar2(1) check (imax_capable in ('Y', 'N'))            not null,
-    wheelchair_availability varchar2(1) check (wheelchair_availability in ('Y', 'N')) not null,
-    sponsor                 varchar2(50),
-    capable_3D              varchar2(1) check (capable_3D in ('Y', 'N'))              not null
+    id_room                 NUMBER PRIMARY KEY,
+    room_sign               VARCHAR2(20)                                              NOT NULL,
+    floor_number            NUMBER                                                    NOT NULL,
+    imax_capable            VARCHAR2(1) CHECK (imax_capable IN ('Y', 'N'))            NOT NULL,
+    wheelchair_availability VARCHAR2(1) CHECK (wheelchair_availability IN ('Y', 'N')) NOT NULL,
+    sponsor                 VARCHAR2(50),
+    capable_3D              VARCHAR2(1) CHECK (capable_3D IN ('Y', 'N'))              NOT NULL
 );
 
-create table Language
+CREATE TABLE Languages
 (
-    id_language   varchar2(10) primary key,
-    language_name varchar2(50) not null
+    id_language   VARCHAR2(10) PRIMARY KEY,
+    language_name VARCHAR2(50) NOT NULL
 );
 
-create table Movie
+CREATE TABLE Movies
 (
-    id_movie           number primary key,
-    name               varchar2(100)                             not null,
-    premiere           date,
-    duration           number                                    not null,
-    is_imax            varchar2(1) check (is_imax in ('Y', 'N')) not null,
-    fk_age_restriction varchar2(50),
-    fk_language        varchar2(10),
+    id_movie           NUMBER PRIMARY KEY,
+    name               VARCHAR2(100)                             NOT NULL,
+    premiere           DATE,
+    duration           NUMBER                                    NOT NULL,
+    is_imax            VARCHAR2(1) CHECK (is_imax IN ('Y', 'N')) NOT NULL,
+    fk_age_restriction VARCHAR2(50),
+    fk_language        VARCHAR2(10),
 
-    foreign key (fk_age_restriction)
-        references AgeRestriction (age_restriction_name),
-    foreign key (fk_language)
-        references Language (id_language)
+    FOREIGN KEY (fk_age_restriction)
+        REFERENCES AgeRestrictions (age_restriction_name),
+    FOREIGN KEY (fk_language)
+        REFERENCES Languages (id_language)
 );
 
-create table MovieVersion
+CREATE TABLE MovieVersions
 (
-    id_movie_version       number primary key,
-    dimension              varchar2(10) not null,
-    fk_subtitles_language  varchar2(10),
-    fk_dubbing_language    varchar2(10),
-    fk_voice_over_language varchar2(10),
-    fk_movie               number,
+    id_movie_version       NUMBER PRIMARY KEY,
+    dimension              VARCHAR2(10) NOT NULL,
+    fk_subtitles_language  VARCHAR2(10),
+    fk_dubbing_language    VARCHAR2(10),
+    fk_voice_over_language VARCHAR2(10),
+    fk_movie               NUMBER,
 
-    foreign key (fk_subtitles_language)
-        references Language (id_language),
-    foreign key (fk_dubbing_language)
-        references Language (id_language),
-    foreign key (fk_voice_over_language)
-        references Language (id_language),
-    foreign key (fk_movie)
-        references Movie (id_movie)
+    FOREIGN KEY (fk_subtitles_language)
+        REFERENCES Languages (id_language),
+    FOREIGN KEY (fk_dubbing_language)
+        REFERENCES Languages (id_language),
+    FOREIGN KEY (fk_voice_over_language)
+        REFERENCES Languages (id_language),
+    FOREIGN KEY (fk_movie)
+        REFERENCES Movies (id_movie)
 );
 
-create table Show
+CREATE TABLE Shows
 (
-    id_show          number primary key,
-    show_date        date   not null,
-    start_hour       number not null,
-    start_minute     number not null,
-    fk_room          number,
-    fk_movie_version number,
+    id_show          NUMBER PRIMARY KEY,
+    show_date        DATE   NOT NULL,
+    start_hour       NUMBER NOT NULL,
+    start_minute     NUMBER NOT NULL,
+    fk_room          NUMBER,
+    fk_movie_version NUMBER,
 
-    foreign key (fk_room)
-        references Room (id_room),
-    foreign key (fk_movie_version)
-        references MovieVersion (id_movie_version)
+    FOREIGN KEY (fk_room)
+        REFERENCES Rooms (id_room),
+    FOREIGN KEY (fk_movie_version)
+        REFERENCES MovieVersions (id_movie_version)
 );
 
-create table Seat
+CREATE TABLE Seats
 (
-    id_seat           number primary key,
-    seat_row          number                                          not null,
-    seat_number       number                                          not null,
-    is_vip_seat       varchar2(1) check ( is_VIP_seat in ('Y', 'N') ) not null,
-    fk_room           number,
-    fk_connected_seat number,
+    id_seat           NUMBER PRIMARY KEY,
+    seat_row          NUMBER                                          NOT NULL,
+    seat_number       NUMBER                                          NOT NULL,
+    is_vip_seat       VARCHAR2(1) CHECK ( is_VIP_seat IN ('Y', 'N') ) NOT NULL,
+    fk_room           NUMBER,
+    fk_connected_seat NUMBER,
 
-    foreign key (fk_room)
-        references Room (id_room),
-    foreign key (fk_connected_seat)
-        references Seat (id_seat)
+    FOREIGN KEY (fk_room)
+        REFERENCES Rooms (id_room),
+    FOREIGN KEY (fk_connected_seat)
+        REFERENCES Seats (id_seat)
 );
 
-create table Ticket
+CREATE TABLE Tickets
 (
-    id_ticket  number primary key,
-    discount   float,
-    base_price float not null,
-    purchase   timestamp,
-    fk_seat    number,
-    fk_show    number,
-    fk_user    number,
+    id_ticket  NUMBER PRIMARY KEY,
+    discount   FLOAT,
+    base_price FLOAT NOT NULL,
+    purchase   TIMESTAMP,
+    fk_seat    NUMBER,
+    fk_show    NUMBER,
+    fk_user    NUMBER,
 
-    foreign key (fk_seat)
-        references Seat (id_seat),
-    foreign key (fk_show)
-        references Show (id_show),
-    foreign key (fk_user)
-        references CinemaUser (id_user)
+    FOREIGN KEY (fk_seat)
+        REFERENCES Seats (id_seat),
+    FOREIGN KEY (fk_show)
+        REFERENCES Shows (id_show),
+    FOREIGN KEY (fk_user)
+        REFERENCES CinemaUsers (id_user)
 );
