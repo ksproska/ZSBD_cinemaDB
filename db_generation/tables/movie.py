@@ -14,6 +14,7 @@ from db_generation.types import INTEGER, CHAR, DATE, BOOLEAN
 class Movie(ObjectWithCounter, AddableToDatabase):
     imdb_df = get_movies_csv()
     faker = Faker()
+    languages = set()
 
     def __init__(self, language: Language, age_restriction: AgeRestriction):
         self.id_movie = INTEGER(Movie.next())
@@ -31,6 +32,8 @@ class Movie(ObjectWithCounter, AddableToDatabase):
         self.fk_language = language.primary_key_value
         self.fk_age_restriction = age_restriction.primary_key_value
 
+        self.languages.add(language)
+
     @classmethod
     def get_all_objects(cls, size: int, languages: list[Language], age_restrictions: list[AgeRestriction]):
         all_objects = []
@@ -43,6 +46,12 @@ class Movie(ObjectWithCounter, AddableToDatabase):
     @property
     def primary_key_value(self):
         return self.id_movie
+
+    def get_language(self) -> Language:
+        for language in self.languages:
+            if language.primary_key_value == self.fk_language:
+                return language
+        return None
 
 
 class TestMovie(unittest.TestCase):

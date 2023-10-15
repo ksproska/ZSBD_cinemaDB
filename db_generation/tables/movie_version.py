@@ -33,11 +33,12 @@ class MovieVersion(ObjectWithCounter, AddableToDatabase):
 
     @classmethod
     def get_all_objects_for_movie(cls, movie: Movie, languages: list[Language]):
+        original_language = movie.get_language()
         if random.random() < 0.6:
-            all_objects = [MovieVersion(movie, dubbing=Language.get_random_language(languages)),
-                           MovieVersion(movie, subtitles=Language.get_random_language(languages))]
+            all_objects = [MovieVersion(movie, dubbing=Language.get_random_language_different_than(languages, original_language)),
+                           MovieVersion(movie, subtitles=Language.get_random_language_different_than(languages, original_language))]
         elif random.random() < 0.8:
-            all_objects = [MovieVersion(movie, voice_over=Language.get_random_language(languages))]
+            all_objects = [MovieVersion(movie, voice_over=Language.get_random_language_different_than(languages, original_language))]
         else:
             all_objects = [MovieVersion(movie)]
         return all_objects
@@ -84,3 +85,8 @@ class TestMovieVersion(unittest.TestCase):
             is_dubbing = movie_version.fk_dubbing_language.value is not None
             is_voice_over = movie_version.fk_voice_over_language.value is not None
             self.assertTrue(not (is_dubbing and is_voice_over))
+
+            original_language = movie_version.get_movie().get_language().id_language.value
+            self.assertNotEquals(original_language, movie_version.fk_dubbing_language.value)
+            self.assertNotEquals(original_language, movie_version.fk_voice_over_language.value)
+            self.assertNotEquals(original_language, movie_version.fk_subtitles_language.value)
