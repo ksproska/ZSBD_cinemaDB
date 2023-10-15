@@ -16,7 +16,8 @@ class NUMBER(OracleType):
 
 
 class BOOLEAN(OracleType):
-    pass
+    def __str__(self):
+        return "'Y'" if self.value else "'N'"
 
 
 class CHAR(OracleType):
