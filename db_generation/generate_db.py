@@ -7,6 +7,7 @@ from db_generation.tables.show import Show
 from db_generation.tables.ticket import Ticket
 from db_generation.tables.cinema_user import CinemaUser
 from db_generation.tables.age_restriction import AgeRestriction
+import pandas as pd
 
 
 if __name__ == '__main__':
@@ -37,3 +38,11 @@ if __name__ == '__main__':
             for obj in objs:
                 f.write(obj.sql_addable + "\n")
         f.write('commit work;')
+
+    with open("output.csv", "w", encoding="utf8") as f:
+        f.write("TableName,Count\n")
+        for objs in all_object_tables:
+            f.write(f"{objs[0].__class__.__name__}s,{len(objs)}\n")
+
+    df = pd.read_csv("output.csv")
+    print(df)
