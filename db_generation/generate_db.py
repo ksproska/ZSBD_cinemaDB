@@ -36,3 +36,4 @@ if __name__ == '__main__':
         for objs in all_object_tables:
             for obj in objs:
                 f.write(obj.sql_addable + "\n")
+        f.write('commit work;')
