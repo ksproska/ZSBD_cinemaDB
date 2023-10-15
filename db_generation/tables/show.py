@@ -23,6 +23,7 @@ class Show(ObjectWithCounter, AddableToDatabase):
         self.start_hour = INTEGER(start_time.hour)
         self.start_minute = INTEGER(start_time.minute)
         self.show_date = DATE(start_time.date())
+
         self.fk_room = room.primary_key_value
         self.fk_movie_version = movie_version.primary_key_value
 

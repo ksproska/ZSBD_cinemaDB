@@ -7,7 +7,7 @@ from db_generation.tables.movie_version import TestMovieVersion
 from db_generation.tables.room import TestRoom
 from db_generation.tables.seat import TestSeat
 # from db_generation.tables.show import TestShow
-# from db_generation.tables.ticket import TestTicket
+from db_generation.tables.ticket import TestTicket
 
 if __name__ == '__main__':
     unittest.main()
