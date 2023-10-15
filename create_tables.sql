@@ -112,5 +112,3 @@ create table Ticket
     foreign key (fk_user)
         references CinemaUser (id_user)
 );
-
-ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
