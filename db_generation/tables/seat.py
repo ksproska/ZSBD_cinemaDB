@@ -7,8 +7,10 @@ from db_generation.types import INTEGER, BOOLEAN
 
 
 class Seat(ObjectWithCounter, AddableToDatabase):
-    numb_of_rows = 15
-    numb_of_seats_in_row = 24
+    numb_of_rows_min = 10
+    numb_of_rows_max = 20
+    numb_of_seats_in_row_min = 15
+    numb_of_seats_in_row_max = 30
     rooms = set()
 
     def __init__(self, room: Room, row, number):
@@ -23,9 +25,11 @@ class Seat(ObjectWithCounter, AddableToDatabase):
     @classmethod
     def get_all_objects_single_room(cls, room: Room):
         all_objects = []
-        for row in range(cls.numb_of_rows):
+        numb_of_rows = random.randint(cls.numb_of_rows_min, cls.numb_of_rows_max)
+        numb_of_seats_in_row = random.randint(cls.numb_of_seats_in_row_min, cls.numb_of_seats_in_row_max)
+        for row in range(numb_of_rows):
             row_numb = row + 1
-            for seat in range(cls.numb_of_seats_in_row):
+            for seat in range(numb_of_seats_in_row):
                 seat_numb = seat + 1
                 seat = Seat(room, row_numb, seat_numb)
                 all_objects.append(seat)

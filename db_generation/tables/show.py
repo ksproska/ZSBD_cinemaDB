@@ -57,7 +57,8 @@ class Show(ObjectWithCounter, AddableToDatabase):
                 movie_version: MovieVersion = random.choice(movie_versions)
             all_objects.append(Show(date_with_time, room, movie_version))
             movie = movie_version.get_movie()
-            date_with_time += relativedelta(minutes=round(movie.duration.value + 30, -1))
+            break_between_shows = 30 + random.choices([0, 60 * 3, 60 * 5], weights=[8, 4, 2])[0]
+            date_with_time += relativedelta(minutes=round(movie.duration.value + break_between_shows, -1))
         return all_objects
 
     @property

@@ -29,7 +29,8 @@ class CHAR(OracleType):
 
 
 class DATE(OracleType):
-    pass
+    def __str__(self):
+        return f"TO_DATE('{self.value}', 'yyyy-mm-dd')"
 
 
 class TIMESTAMP(OracleType):
