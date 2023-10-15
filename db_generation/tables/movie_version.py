@@ -6,6 +6,7 @@ from db_generation.parent_classes import ObjectWithCounter, AddableToDatabase
 from db_generation.tables.age_restriction import AgeRestriction
 from db_generation.tables.language import Language
 from db_generation.tables.movie import Movie
+from db_generation.tables.room import Room
 from db_generation.types import INTEGER, CHAR
 
 
@@ -68,6 +69,21 @@ class MovieVersion(ObjectWithCounter, AddableToDatabase):
             if movie.primary_key_value == self.fk_movie:
                 return movie
         return None
+
+    @classmethod
+    def get_movie_version_that_can_be_shown_in_room(cls, movie_versions, room: Room):
+        movie_version: MovieVersion = random.choice(movie_versions)
+        while not can_movie_version_be_shown_in_room(movie_version, room):
+            movie_version: MovieVersion = random.choice(movie_versions)
+        return movie_version
+
+
+def can_movie_version_be_shown_in_room(movie_version: MovieVersion, room: Room):
+    if movie_version.is_3d and not room.capable_3D.value:
+        return False
+    if movie_version.get_movie().is_imax.value and not room.imax_capable.value:
+        return False
+    return True
 
 
 class TestMovieVersion(unittest.TestCase):
