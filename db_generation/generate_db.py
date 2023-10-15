@@ -1,3 +1,4 @@
+from db_generation.generate_shema import generate_schema
 from db_generation.tables.movie import Movie
 from db_generation.tables.movie_version import MovieVersion
 from db_generation.tables.room import Room
@@ -10,7 +11,7 @@ from db_generation.tables.age_restriction import AgeRestriction
 import pandas as pd
 
 
-if __name__ == '__main__':
+def generate_db():
     rooms = Room.get_all_objects(3)
     seats = Seat.get_all_objects(rooms)
     age_restrictions = AgeRestriction.get_all_objects()
@@ -41,7 +42,12 @@ if __name__ == '__main__':
     with open("output.csv", "w", encoding="utf8") as f:
         f.write("TableName,Count\n")
         for objs in all_object_tables:
-            f.write(f"{objs[0].__class__.__name__}s,{len(objs)}\n")
+            f.write(f"{objs[0].table_name},{len(objs)}\n")
 
     df = pd.read_csv("output.csv")
     print(df)
+
+
+if __name__ == '__main__':
+    generate_db()
+    generate_schema()
