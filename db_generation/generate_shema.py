@@ -11,7 +11,7 @@ from db_generation.tables.cinema_user import CinemaUser
 from db_generation.tables.age_restriction import AgeRestriction
 
 
-if __name__ == '__main__':
+def generate_schema():
     age_restriction = AgeRestriction.get_all_objects()[0]
     language = Language.get_all_objects()[0]
     user = CinemaUser()
@@ -35,5 +35,11 @@ if __name__ == '__main__':
     ]
 
     with open("db_init.sql", "w", encoding="utf8") as f:
+        f.write("-- THIS SCHEMA IS NOT COMPLEAT, it does not cover constraints or foreign keys\n")
+        f.write("-- Its purpose is only to gather all attributes in one place for easier further development\n\n")
         for table in all_tables:
             f.write(table.create_table() + "\n")
+
+
+if __name__ == '__main__':
+    generate_schema()

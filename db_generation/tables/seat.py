@@ -59,7 +59,8 @@ class TestSeat(unittest.TestCase):
         rooms = Room.get_all_objects(20)
         seats = Seat.get_all_objects(rooms)
 
-        self.assertEqual(len(rooms) * Seat.numb_of_rows * Seat.numb_of_seats_in_row, len(seats))
+        self.assertLessEqual(len(rooms) * Seat.numb_of_rows_min * Seat.numb_of_seats_in_row_min, len(seats))
+        self.assertGreaterEqual(len(rooms) * Seat.numb_of_rows_max * Seat.numb_of_seats_in_row_max, len(seats))
 
         ids = [s.primary_key_value for s in seats]
         self.assertEqual(len(ids), len(set(ids)))

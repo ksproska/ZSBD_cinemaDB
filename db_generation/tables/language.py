@@ -25,6 +25,13 @@ class Language(AddableToDatabase, ObjectWithCounter):
     def get_random_language(cls, languages):
         return random.choices(languages, weights=Language.weights)[0]
 
+    @classmethod
+    def get_random_language_different_than(cls, languages, language_to_avoid):
+        chosen_language = random.choices(languages, weights=Language.weights)[0]
+        while chosen_language == language_to_avoid:
+            chosen_language = random.choices(languages, weights=Language.weights)[0]
+        return chosen_language
+
 
 class TestLanguage(unittest.TestCase):
     def test_get_all_objects(self):
@@ -47,3 +54,9 @@ class TestLanguage(unittest.TestCase):
         counts = language_count_dict.values()
         counts = sorted(counts, reverse=True)
         self.assertGreater(sum(counts[:2]), sum(counts[2:]))
+
+    def test_returns_different_language(self):
+        languages = Language.get_all_objects()
+        for language in languages:
+            diff_language = Language.get_random_language_different_than(languages, language)
+            self.assertNotEquals(language, diff_language)

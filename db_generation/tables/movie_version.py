@@ -6,6 +6,7 @@ from db_generation.parent_classes import ObjectWithCounter, AddableToDatabase
 from db_generation.tables.age_restriction import AgeRestriction
 from db_generation.tables.language import Language
 from db_generation.tables.movie import Movie
+from db_generation.tables.room import Room
 from db_generation.types import INTEGER, CHAR
 
 
@@ -33,11 +34,12 @@ class MovieVersion(ObjectWithCounter, AddableToDatabase):
 
     @classmethod
     def get_all_objects_for_movie(cls, movie: Movie, languages: list[Language]):
+        original_language = movie.get_language()
         if random.random() < 0.6:
-            all_objects = [MovieVersion(movie, dubbing=Language.get_random_language(languages)),
-                           MovieVersion(movie, subtitles=Language.get_random_language(languages))]
+            all_objects = [MovieVersion(movie, dubbing=Language.get_random_language_different_than(languages, original_language)),
+                           MovieVersion(movie, subtitles=Language.get_random_language_different_than(languages, original_language))]
         elif random.random() < 0.8:
-            all_objects = [MovieVersion(movie, voice_over=Language.get_random_language(languages))]
+            all_objects = [MovieVersion(movie, voice_over=Language.get_random_language_different_than(languages, original_language))]
         else:
             all_objects = [MovieVersion(movie)]
         return all_objects
@@ -68,6 +70,21 @@ class MovieVersion(ObjectWithCounter, AddableToDatabase):
                 return movie
         return None
 
+    @classmethod
+    def get_movie_version_that_can_be_shown_in_room(cls, movie_versions, room: Room):
+        movie_version: MovieVersion = random.choice(movie_versions)
+        while not can_movie_version_be_shown_in_room(movie_version, room):
+            movie_version: MovieVersion = random.choice(movie_versions)
+        return movie_version
+
+
+def can_movie_version_be_shown_in_room(movie_version: MovieVersion, room: Room):
+    if movie_version.is_3d and not room.capable_3D.value:
+        return False
+    if movie_version.get_movie().is_imax.value and not room.imax_capable.value:
+        return False
+    return True
+
 
 class TestMovieVersion(unittest.TestCase):
     def test_get_all_objects(self):
@@ -80,7 +97,11 @@ class TestMovieVersion(unittest.TestCase):
         self.assertGreater(len(movie_versions), number_of_movies)
 
         for movie_version in movie_versions:
-            print(movie_version)
             is_dubbing = movie_version.fk_dubbing_language.value is not None
             is_voice_over = movie_version.fk_voice_over_language.value is not None
             self.assertTrue(not (is_dubbing and is_voice_over))
+
+            original_language = movie_version.get_movie().get_language().id_language.value
+            self.assertNotEquals(original_language, movie_version.fk_dubbing_language.value)
+            self.assertNotEquals(original_language, movie_version.fk_voice_over_language.value)
+            self.assertNotEquals(original_language, movie_version.fk_subtitles_language.value)
