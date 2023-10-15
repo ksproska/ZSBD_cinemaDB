@@ -19,8 +19,6 @@ from db_generation.types import INTEGER, FLOAT, TIMESTAMP
 
 
 class Ticket(ObjectWithCounter, AddableToDatabase):
-    probability_of_showing_nonimax_verion_if_imax_possible = 0.4
-
     min_advance_of_purchase = -30
     max_advance_of_purchase = 60 * 48
 
@@ -66,8 +64,6 @@ class Ticket(ObjectWithCounter, AddableToDatabase):
         movie_version = show.get_movie_version()
         dimension = movie_version.dimension.value
         is_imax = movie_version.get_movie().is_imax.value
-        if is_imax and random.random() < self.probability_of_showing_nonimax_verion_if_imax_possible:
-            is_imax = False
         return dimension, is_imax
 
     def get_purchase(self, show: Show):
