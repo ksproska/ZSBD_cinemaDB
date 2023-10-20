@@ -27,6 +27,26 @@ class Room(ObjectWithCounter, AddableToDatabase):
     def get_all_objects(cls, size):
         return [Room() for _ in range(size)]
 
+    def get_room_schema(self, seats) -> str:
+        seats_in_room = [s for s in seats if s.get_room().id_room == self.id_room]
+        row_number = seats_in_room[0].seat_row.value
+        schema = f"{self.__class__.__name__} {self.id_room} - "
+        if self.capable_3D.value:
+            schema += "3D "
+        else:
+            schema += "2D "
+        if self.imax_capable.value:
+            schema += "IMAX"
+        schema += "\n"
+        for seat in seats_in_room:
+            seat_row = seat.seat_row.value
+            br = "" if seat_row == row_number else "\n"
+            s = "V" if seat.is_vip_seat.value else "_"
+            schema += br + s
+            row_number = seat_row
+        schema += "\n"
+        return schema
+
 
 class TestRoom(unittest.TestCase):
     def test_get_all_objects(self):

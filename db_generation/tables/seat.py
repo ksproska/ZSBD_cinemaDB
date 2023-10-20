@@ -13,11 +13,11 @@ class Seat(ObjectWithCounter, AddableToDatabase):
     numb_of_seats_in_row_max = 30
     rooms = set()
 
-    def __init__(self, room: Room, row, number):
+    def __init__(self, room: Room, row, number, is_vip_seat=False):
         self.id_seat = INTEGER(Seat.next())
         self.seat_row = INTEGER(row)
         self.seat_number = INTEGER(number)
-        self.is_vip_seat = BOOLEAN(bool(random.getrandbits(1)))
+        self.is_vip_seat = BOOLEAN(is_vip_seat)
         self.fk_room = room.primary_key_value
 
         self.rooms.add(room)
@@ -27,11 +27,16 @@ class Seat(ObjectWithCounter, AddableToDatabase):
         all_objects = []
         numb_of_rows = random.randint(cls.numb_of_rows_min, cls.numb_of_rows_max)
         numb_of_seats_in_row = random.randint(cls.numb_of_seats_in_row_min, cls.numb_of_seats_in_row_max)
+        vip_seat_rows = [numb_of_rows - 4, numb_of_rows - 3, numb_of_rows - 2]
+        middle_seat = int(numb_of_seats_in_row/2)
+        numb_of_vip_in_row = 8
+        vip_seats_in_row = [middle_seat - x + (numb_of_vip_in_row/2) - 1 for x in range(numb_of_vip_in_row)]
         for row in range(numb_of_rows):
             row_numb = row + 1
             for seat in range(numb_of_seats_in_row):
                 seat_numb = seat + 1
-                seat = Seat(room, row_numb, seat_numb)
+                is_vip_seat = row in vip_seat_rows and seat in vip_seats_in_row
+                seat = Seat(room, row_numb, seat_numb, is_vip_seat)
                 all_objects.append(seat)
         return all_objects
 

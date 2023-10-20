@@ -56,6 +56,10 @@ def generate_db():
 
     print("\nSum: ", df["Count"].sum())
 
+    with open("room_setup.txt", "w", encoding="utf8") as f:
+        for room in rooms:
+            f.write(room.get_room_schema(seats))
+
 
 if __name__ == '__main__':
     generate_db()
