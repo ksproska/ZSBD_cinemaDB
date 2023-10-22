@@ -39,6 +39,7 @@ CREATE TABLE Seats (
 	seat_number INTEGER,
 	is_vip_seat BOOLEAN,
 	fk_room INTEGER,
+	fk_connected_seat INTEGER,
 	PRIMARY KEY(id_seat)
 );
 

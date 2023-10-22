@@ -29,10 +29,10 @@ def generate_db():
     tickets = Ticket.get_all_objects(seats, shows, users)
 
     all_object_tables = [
-        rooms,
-        seats,
         age_restrictions,
         languages,
+        rooms,
+        seats,
         movies,
         movie_versions,
         shows,
@@ -58,7 +58,7 @@ def generate_db():
 
     with open("room_setup.txt", "w", encoding="utf8") as f:
         for room in rooms:
-            f.write(room.get_room_schema(seats))
+            f.write(room.get_room_schema(seats) + "\n")
 
 
 if __name__ == '__main__':

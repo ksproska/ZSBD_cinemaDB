@@ -38,11 +38,14 @@ class Room(ObjectWithCounter, AddableToDatabase):
         if self.imax_capable.value:
             schema += "IMAX"
         schema += "\n"
-        for seat in seats_in_room:
+        for inx, seat in enumerate(seats_in_room):
             seat_row = seat.seat_row.value
             br = "" if seat_row == row_number else "\n"
             s = "V" if seat.is_vip_seat.value else "_"
-            schema += br + s
+            c = "C" if seat.fk_connected_seat.value is not None \
+                       or inx + 1 < len(seats_in_room) and seats_in_room[inx+1].fk_connected_seat.value is not None \
+                else "_"
+            schema += br + s + c + " "
             row_number = seat_row
         schema += "\n"
         return schema
