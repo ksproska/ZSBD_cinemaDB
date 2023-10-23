@@ -1,4 +1,6 @@
 import pandas as pd
+from tqdm import tqdm
+
 from db_generation.generate_shema import generate_schema
 from db_generation.tables.age_restriction import AgeRestriction
 from db_generation.tables.cinema_user import CinemaUser
@@ -59,6 +61,11 @@ def generate_db():
     with open("room_setup.txt", "w", encoding="utf8") as f:
         for room in rooms:
             f.write(room.get_room_schema(seats) + "\n")
+
+    with open("show_setup.txt", "w", encoding="utf8") as f:
+        for show in tqdm(shows[:5]):
+            f.write(show.get_show_schema(tickets, seats) + "\n")
+        f.write("\n...")
 
 
 if __name__ == '__main__':

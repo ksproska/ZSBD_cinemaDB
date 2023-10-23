@@ -2,9 +2,9 @@ TableName,Count
 AgeRestrictions,3
 Languages,5
 Rooms,5
-Seats,1998
+Seats,1480
 Movies,50
-MovieVersions,85
-Shows,100
+MovieVersions,75
+Shows,104
 CinemaUsers,50
-Tickets,8073
+Tickets,12912
