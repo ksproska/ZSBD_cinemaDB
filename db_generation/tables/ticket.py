@@ -52,7 +52,7 @@ class Ticket(ObjectWithCounter, AddableToDatabase):
         self.seats.add(seat)
 
     def get_discount(self, seat: Seat):
-        if seat.is_vip_seat:
+        if seat.is_vip_seat.value:
             return random.choice([v for k, v in self.discounts.items() if "vip" == k[1]])
         return random.choice([v for k, v in self.discounts.items() if k[1] is None])
 

@@ -53,6 +53,13 @@ class Movie(ObjectWithCounter, AddableToDatabase):
                 return language
         return None
 
+    def get_movie_versions_summary(self, movie_versions):
+        movie_versions_for_movie = [mv for mv in movie_versions if mv.get_movie().id_movie == self.id_movie]
+        summary = f"{self.name.value}\nis IMAX: {self.is_imax.value}\n"
+        for mv in movie_versions_for_movie:
+            summary += mv.get_movie_version_details()
+        return summary
+
 
 class TestMovie(unittest.TestCase):
     def test_get_all_objects(self):

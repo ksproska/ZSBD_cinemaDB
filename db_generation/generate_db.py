@@ -58,12 +58,19 @@ def generate_db():
 
     print("\nSum: ", df["Count"].sum())
 
-    with open("room_setup.txt", "w", encoding="utf8") as f:
+    with open("setup_rooms.txt", "w", encoding="utf8") as f:
         for room in rooms:
             f.write(room.get_room_schema(seats) + "\n")
 
-    with open("show_setup.txt", "w", encoding="utf8") as f:
-        for show in tqdm(shows[:5]):
+    with open("setup_movie_versions.txt", "w", encoding="utf8") as f:
+        for movie in movies:
+            f.write(movie.get_movie_versions_summary(movie_versions) + "\n")
+
+    with open("setup_shows_dates.txt", "w", encoding="utf8") as f:
+        f.write(Show.get_dates_summary(shows))
+
+    with open("setup_shows.txt", "w", encoding="utf8") as f:
+        for show in tqdm(shows[:100:10]):
             f.write(show.get_show_schema(tickets, seats) + "\n")
         f.write("\n...")
 
