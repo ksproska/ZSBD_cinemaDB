@@ -1,230 +1,4140 @@
 The Godfather
-is IMAX: True
-2D	voice_over: english	
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
 
 The Dark Knight
 is IMAX: False
-2D	dubbing: czech	
-2D	subtitles: polish	
+2D	voice_over: english	
 
 The Godfather: Part II
 is IMAX: True
-3D	voice_over: german	
+2D	dubbing: polish	
+2D	subtitles: slovene	
 
 12 Angry Men
-is IMAX: True
-2D	dubbing: english	
-3D	subtitles: english	
-
-The Lord of the Rings: The Return of the King
-is IMAX: True
-2D	voice_over: polish	
-
-Pulp Fiction
 is IMAX: False
-3D	voice_over: english	
-
-Schindlers List
-is IMAX: True
-2D	voice_over: polish	
-
-Inception
-is IMAX: True
-2D	dubbing: czech	
-2D	subtitles: polish	
-
-Fight Club
-is IMAX: True
-3D	dubbing: english	
-3D	subtitles: czech	
-
-The Lord of the Rings: The Fellowship of the Ring
-is IMAX: True
 2D	dubbing: english	
 2D	subtitles: english	
 
-Forrest Gump
-is IMAX: False
-2D	dubbing: english	
-2D	subtitles: german	
-
-Il buono, il brutto, il cattivo
+The Lord of the Rings: The Return of the King
 is IMAX: True
 2D	dubbing: polish	
 2D	subtitles: polish	
 
-The Lord of the Rings: The Two Towers
-is IMAX: True
-2D	dubbing: english	
-3D	subtitles: english	
+Pulp Fiction
+is IMAX: False
+3D	
 
-The Matrix
-is IMAX: True
-2D	dubbing: polish	
-2D	subtitles: german	
+Schindlers List
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: polish	
 
-Goodfellas
+Inception
 is IMAX: False
 2D	dubbing: english	
-3D	subtitles: english	
+2D	subtitles: english	
 
-Star Wars: Episode V - The Empire Strikes Back
+Fight Club
+is IMAX: False
+2D	voice_over: english	
+
+The Lord of the Rings: The Fellowship of the Ring
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Forrest Gump
+is IMAX: True
+3D	dubbing: english	
+3D	subtitles: german	
+
+Il buono, il brutto, il cattivo
 is IMAX: True
 3D	dubbing: polish	
 2D	subtitles: polish	
 
-One Flew Over the Cuckoos Nest
+The Lord of the Rings: The Two Towers
 is IMAX: False
-3D	voice_over: polish	
+2D	dubbing: polish	
+3D	subtitles: english	
 
-Gisaengchung
+The Matrix
 is IMAX: False
-2D	dubbing: german	
+2D	dubbing: english	
 2D	subtitles: english	
 
-Soorarai Pottru
+Goodfellas
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Star Wars: Episode V - The Empire Strikes Back
+is IMAX: True
+2D	voice_over: polish	
+
+One Flew Over the Cuckoos Nest
 is IMAX: False
 2D	dubbing: polish	
 3D	subtitles: slovene	
 
+Gisaengchung
+is IMAX: False
+2D	
+
+Soorarai Pottru
+is IMAX: False
+3D	voice_over: polish	
+
 Interstellar
-is IMAX: True
-2D	voice_over: polish	
+is IMAX: False
+2D	voice_over: english	
 
 Cidade de Deus
-is IMAX: False
-2D	voice_over: slovene	
+is IMAX: True
+3D	dubbing: slovene	
+2D	subtitles: czech	
 
 Sen to Chihiro no kamikakushi
 is IMAX: True
-2D	dubbing: polish	
-2D	subtitles: czech	
+2D	voice_over: czech	
 
 Saving Private Ryan
 is IMAX: True
-2D	dubbing: polish	
-2D	subtitles: czech	
+3D	voice_over: czech	
 
 The Green Mile
 is IMAX: True
-3D	dubbing: polish	
-2D	subtitles: czech	
+2D	voice_over: english	
 
 La vita è bella
 is IMAX: False
-3D	voice_over: slovene	
+3D	voice_over: polish	
 
 Se7en
 is IMAX: False
-2D	dubbing: czech	
-3D	subtitles: german	
+3D	
 
 The Silence of the Lambs
-is IMAX: True
-3D	dubbing: polish	
-3D	subtitles: polish	
+is IMAX: False
+2D	
 
 Star Wars
-is IMAX: True
-2D	voice_over: polish	
+is IMAX: False
+3D	voice_over: polish	
 
 Seppuku
-is IMAX: True
-2D	dubbing: english	
-2D	subtitles: slovene	
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: german	
 
 Shichinin no samurai
-is IMAX: True
-2D	voice_over: czech	
+is IMAX: False
+3D	voice_over: slovene	
 
 Its a Wonderful Life
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Hamilton
+is IMAX: False
+2D	dubbing: czech	
+3D	subtitles: polish	
+
+Ratsasan
 is IMAX: False
 2D	dubbing: slovene	
 2D	subtitles: polish	
 
-Hamilton
-is IMAX: False
-3D	voice_over: english	
-
-Ratsasan
-is IMAX: False
-2D	dubbing: polish	
-2D	subtitles: polish	
-
 Whiplash
-is IMAX: True
-2D	dubbing: english	
-2D	subtitles: english	
+is IMAX: False
+2D	voice_over: german	
 
 The Intouchables
-is IMAX: True
-2D	voice_over: polish	
-
-The Prestige
 is IMAX: False
-3D	dubbing: polish	
-2D	subtitles: english	
-
-The Departed
-is IMAX: True
 2D	voice_over: english	
 
-The Pianist
+The Prestige
 is IMAX: True
-2D	dubbing: english	
-3D	subtitles: english	
+3D	dubbing: czech	
+2D	subtitles: czech	
+
+The Departed
+is IMAX: False
+2D	voice_over: polish	
+
+The Pianist
+is IMAX: False
+2D	
 
 Gladiator
-is IMAX: True
-3D	dubbing: slovene	
-2D	subtitles: slovene	
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: german	
 
 American History X
 is IMAX: False
 2D	
 
 The Usual Suspects
-is IMAX: False
+is IMAX: True
 2D	dubbing: english	
 2D	subtitles: english	
 
 Léon
-is IMAX: True
-3D	dubbing: english	
-2D	subtitles: slovene	
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: polish	
 
 The Lion King
-is IMAX: True
+is IMAX: False
 3D	
 
 Terminator 2: Judgment Day
 is IMAX: True
 3D	dubbing: polish	
-2D	subtitles: english	
+3D	subtitles: german	
 
 Nuovo Cinema Paradiso
 is IMAX: True
-2D	voice_over: czech	
+2D	voice_over: polish	
 
 Hotaru no haka
 is IMAX: False
 3D	dubbing: polish	
-2D	subtitles: polish	
+2D	subtitles: english	
 
 Back to the Future
-is IMAX: True
-2D	dubbing: slovene	
-3D	subtitles: polish	
+is IMAX: False
+3D	dubbing: slovene	
+2D	subtitles: english	
 
 Once Upon a Time in the West
-is IMAX: False
-2D	voice_over: german	
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
 
 Psycho
-is IMAX: False
+is IMAX: True
 2D	voice_over: polish	
 
 Casablanca
 is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Modern Times
+is IMAX: True
+3D	voice_over: polish	
+
+City Lights
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: english	
+
+Capharnaüm
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: czech	
+
+Joker
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Ayla: The Daughter of War
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Vikram Vedha
+is IMAX: False
+2D	voice_over: czech	
+
+Kimi no na wa.
+is IMAX: False
+2D	voice_over: english	
+
+Dangal
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Spider-Man: Into the Spider-Verse
+is IMAX: True
+3D	voice_over: czech	
+
+Avengers: Endgame
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Avengers: Infinity War
+is IMAX: True
+3D	voice_over: german	
+
+Coco
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Django Unchained
+is IMAX: False
+2D	voice_over: slovene	
+
+The Dark Knight Rises
+is IMAX: False
+2D	voice_over: polish	
+
+3 Idiots
+is IMAX: False
+2D	voice_over: english	
+
+Taare Zameen Par
+is IMAX: True
+2D	voice_over: english	
+
+WALL·E
+is IMAX: False
+2D	voice_over: english	
+
+The Lives of Others
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Oldeuboi
+is IMAX: False
 2D	
+
+Memento
+is IMAX: True
+3D	voice_over: english	
+
+Mononoke-hime
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Once Upon a Time in America
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Raiders of the Lost Ark
+is IMAX: True
+2D	voice_over: english	
+
+The Shining
+is IMAX: True
+2D	voice_over: czech	
+
+Apocalypse Now
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+Alien
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: german	
+
+Tengoku to jigoku
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: czech	
+
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+is IMAX: True
+3D	dubbing: german	
+3D	subtitles: english	
+
+Witness for the Prosecution
+is IMAX: False
+3D	voice_over: czech	
+
+Paths of Glory
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Rear Window
+is IMAX: False
+3D	voice_over: czech	
+
+Sunset Blvd.
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: german	
+
+The Great Dictator
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+1917
+is IMAX: True
+2D	
+
+Tumbbad
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Drishyam
+is IMAX: False
+2D	
+
+Jagten
+is IMAX: False
+3D	voice_over: german	
+
+Jodaeiye Nader az Simin
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: polish	
+
+Incendies
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Dara iz Jasenovca
+is IMAX: False
+3D	voice_over: german	
+
+The Father
+is IMAX: False
+2D	
+
+Babam ve Oglum
+is IMAX: True
+3D	dubbing: german	
+2D	subtitles: english	
+
+Inglourious Basterds
+is IMAX: True
+2D	voice_over: slovene	
+
+Eternal Sunshine of the Spotless Mind
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+Amélie
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Snatch
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: czech	
+
+Requiem for a Dream
+is IMAX: True
+2D	voice_over: czech	
+
+American Beauty
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Good Will Hunting
+is IMAX: True
+3D	voice_over: english	
+
+Bacheha-Ye aseman
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Toy Story
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Braveheart
+is IMAX: True
+3D	
+
+Reservoir Dogs
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: czech	
+
+Full Metal Jacket
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Idi i smotri
+is IMAX: True
+3D	dubbing: czech	
+2D	subtitles: polish	
+
+Aliens
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: german	
+
+Amadeus
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Scarface
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+Star Wars: Episode VI - Return of the Jedi
+is IMAX: False
+3D	voice_over: english	
+
+Das Boot
+is IMAX: False
+2D	voice_over: polish	
+
+The Sting
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: german	
+
+A Clockwork Orange
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Anand
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+2001: A Space Odyssey
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Lawrence of Arabia
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Apartment
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+North by Northwest
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: english	
+
+Vertigo
+is IMAX: False
+2D	voice_over: polish	
+
+Singin in the Rain
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: polish	
+
+Ikiru
+is IMAX: False
+3D	dubbing: polish	
+3D	subtitles: german	
+
+Ladri di biciclette
+is IMAX: False
+3D	dubbing: polish	
+3D	subtitles: german	
+
+Double Indemnity
+is IMAX: True
+2D	voice_over: polish	
+
+Citizen Kane
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+M - Eine Stadt sucht einen Mörder
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Metropolis
+is IMAX: False
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+The Kid
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Chhichhore
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Uri: The Surgical Strike
+is IMAX: False
+2D	
+
+Andhadhun
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+K.G.F: Chapter 1
+is IMAX: True
+2D	
+
+Green Book
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: english	
+
+Talvar
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: slovene	
+
+Baahubali 2: The Conclusion
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Klaus
+is IMAX: False
+2D	voice_over: polish	
+
+Drishyam
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: slovene	
+
+Queen
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: german	
+
+Mandariinid
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Bhaag Milkha Bhaag
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Gangs of Wasseypur
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Udaan
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Paan Singh Tomar
+is IMAX: True
+2D	voice_over: polish	
+
+Zindagi Na Milegi Dobara
+is IMAX: True
+2D	
+
+El secreto de sus ojos
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Warrior
+is IMAX: False
+3D	dubbing: english	
+3D	subtitles: slovene	
+
+Shutter Island
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Up
+is IMAX: True
+3D	voice_over: slovene	
+
+Miracle in Cell No. 7
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Wolf of Wall Street
+is IMAX: True
+2D	voice_over: slovene	
+
+Chak De! India
+is IMAX: True
+2D	voice_over: polish	
+
+There Will Be Blood
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: polish	
+
+Pans Labyrinth
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Toy Story 3
+is IMAX: False
+3D	dubbing: slovene	
+2D	subtitles: czech	
+
+V for Vendetta
+is IMAX: True
+2D	voice_over: czech	
+
+Rang De Basanti
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Black
+is IMAX: True
+2D	voice_over: polish	
+
+Batman Begins
+is IMAX: False
+3D	
+
+Swades: We, the People
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: german	
+
+Der Untergang
+is IMAX: False
+2D	voice_over: english	
+
+Hauru no ugoku shiro
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+A Beautiful Mind
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Hera Pheri
+is IMAX: False
+2D	voice_over: german	
+
+Lock, Stock and Two Smoking Barrels
+is IMAX: True
+2D	
+
+L.A. Confidential
+is IMAX: False
+2D	
+
+Eskiya
+is IMAX: True
+2D	
+
+Heat
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Casino
+is IMAX: False
+2D	voice_over: english	
+
+Andaz Apna Apna
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: english	
+
+Unforgiven
+is IMAX: True
+3D	dubbing: czech	
+2D	subtitles: polish	
+
+Indiana Jones and the Last Crusade
+is IMAX: False
+2D	voice_over: polish	
+
+Dom za vesanje
+is IMAX: False
+2D	
+
+Tonari no Totoro
+is IMAX: False
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+Die Hard
+is IMAX: False
+3D	voice_over: polish	
+
+Ran
+is IMAX: True
+2D	
+
+Raging Bull
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Stalker
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Höstsonaten
+is IMAX: False
+3D	voice_over: polish	
+
+Taxi Driver
+is IMAX: True
+2D	voice_over: polish	
+
+The Message
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: polish	
+
+Sholay
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: czech	
+
+Monty Python and the Holy Grail
+is IMAX: True
+2D	voice_over: czech	
+
+Per qualche dollaro in più
+is IMAX: True
+3D	voice_over: english	
+
+The Great Escape
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+To Kill a Mockingbird
+is IMAX: False
+3D	
+
+Yojinbo
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Judgment at Nuremberg
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: english	
+
+Some Like It Hot
+is IMAX: False
+3D	dubbing: czech	
+2D	subtitles: polish	
+
+Smultronstället
+is IMAX: False
+2D	voice_over: polish	
+
+Det sjunde inseglet
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Dial M for Murder
+is IMAX: True
+2D	
+
+Tôkyô monogatari
+is IMAX: False
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+Rashomon
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+All About Eve
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: english	
+
+The Treasure of the Sierra Madre
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+To Be or Not to Be
+is IMAX: True
+2D	voice_over: polish	
+
+The Gold Rush
+is IMAX: False
+3D	dubbing: polish	
+3D	subtitles: german	
+
+Sherlock Jr.
+is IMAX: True
+2D	dubbing: czech	
+3D	subtitles: german	
+
+Portrait de la jeune fille en feu
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: polish	
+
+Pink
+is IMAX: True
+2D	voice_over: polish	
+
+Koe no katachi
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Three Billboards Outside Ebbing, Missouri
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Contratiempo
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: slovene	
+
+Ah-ga-ssi
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Mommy
+is IMAX: True
+2D	voice_over: czech	
+
+Haider
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Logan
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Room
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: slovene	
+
+Relatos salvajes
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Soul
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: czech	
+
+Kis Uykusu
+is IMAX: False
+2D	
+
+PK
+is IMAX: False
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+OMG: Oh My God!
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+The Grand Budapest Hotel
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Gone Girl
+is IMAX: False
+3D	voice_over: english	
+
+Ôkami kodomo no Ame to Yuki
+is IMAX: True
+2D	voice_over: english	
+
+Hacksaw Ridge
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: english	
+
+Inside Out
+is IMAX: False
+2D	voice_over: czech	
+
+Barfi!
+is IMAX: False
+2D	dubbing: czech	
+3D	subtitles: slovene	
+
+12 Years a Slave
+is IMAX: False
+2D	voice_over: english	
+
+Rush
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Ford v Ferrari
+is IMAX: False
+2D	voice_over: slovene	
+
+Spotlight
+is IMAX: True
+3D	voice_over: czech	
+
+Song of the Sea
+is IMAX: False
+2D	voice_over: english	
+
+Kahaani
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: polish	
+
+Prisoners
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: polish	
+
+Mad Max: Fury Road
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+A Wednesday
+is IMAX: False
+2D	
+
+Zack Snyders Justice League
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: slovene	
+
+Gran Torino
+is IMAX: False
+2D	voice_over: czech	
+
+Harry Potter and the Deathly Hallows: Part 2
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Okuribito
+is IMAX: False
+3D	dubbing: german	
+2D	subtitles: english	
+
+Hachi: A Dogs Tale
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Mary and Max
+is IMAX: False
+2D	
+
+How to Train Your Dragon
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Into the Wild
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+No Country for Old Men
+is IMAX: False
+3D	dubbing: german	
+3D	subtitles: german	
+
+Lage Raho Munna Bhai
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Dare mo shiranai
+is IMAX: False
+3D	voice_over: german	
+
+Million Dollar Baby
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Hotel Rwanda
+is IMAX: True
+3D	dubbing: czech	
+3D	subtitles: czech	
+
+Taegukgi hwinalrimyeo
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Before Sunset
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: german	
+
+Munna Bhai M.B.B.S.
+is IMAX: True
+2D	voice_over: polish	
+
+Salinui chueok
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Dil Chahta Hai
+is IMAX: True
+3D	dubbing: english	
+3D	subtitles: english	
+
+Kill Bill: Vol. 1
+is IMAX: True
+2D	
+
+Finding Nemo
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Catch Me If You Can
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Amores perros
+is IMAX: True
+2D	voice_over: german	
+
+Monsters, Inc.
+is IMAX: False
+3D	voice_over: polish	
+
+Shin seiki Evangelion Gekijô-ban: Air/Magokoro wo, kimi ni
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Lagaan: Once Upon a Time in India
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+The Sixth Sense
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+La leggenda del pianista sulloceano
+is IMAX: False
+2D	voice_over: polish	
+
+The Truman Show
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: english	
+
+Crna macka, beli macor
+is IMAX: False
+2D	voice_over: slovene	
+
+The Big Lebowski
+is IMAX: False
+2D	voice_over: polish	
+
+Fa yeung nin wah
+is IMAX: True
+2D	voice_over: english	
+
+Trainspotting
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Fargo
+is IMAX: True
+2D	voice_over: slovene	
+
+Underground
+is IMAX: True
+3D	voice_over: polish	
+
+La haine
+is IMAX: False
+3D	dubbing: german	
+3D	subtitles: polish	
+
+Dilwale Dulhania Le Jayenge
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: german	
+
+Before Sunrise
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: english	
+
+Trois couleurs: Rouge
+is IMAX: True
+3D	voice_over: german	
+
+Chung Hing sam lam
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: polish	
+
+Jurassic Park
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+In the Name of the Father
+is IMAX: True
+2D	voice_over: english	
+
+Ba wang bie ji
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Dà hóng denglong gaogao guà
+is IMAX: False
+2D	voice_over: slovene	
+
+Dead Poets Society
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Stand by Me
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Platoon
+is IMAX: True
+2D	
+
+Sacrifice
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Paris, Texas
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: english	
+
+Kaze no tani no Naushika
+is IMAX: False
+2D	voice_over: polish	
+
+The Thing
+is IMAX: True
+2D	voice_over: english	
+
+Pink Floyd: The Wall
+is IMAX: True
+2D	voice_over: english	
+
+Fitzcarraldo
+is IMAX: False
+3D	voice_over: english	
+
+Fanny och Alexander
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Blade Runner
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+The Elephant Man
+is IMAX: False
+3D	voice_over: czech	
+
+Life of Brian
+is IMAX: True
+3D	voice_over: polish	
+
+The Deer Hunter
+is IMAX: True
+2D	
+
+Rocky
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+Network
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Barry Lyndon
+is IMAX: False
+3D	voice_over: english	
+
+Zerkalo
+is IMAX: False
+2D	voice_over: english	
+
+Chinatown
+is IMAX: True
+2D	voice_over: english	
+
+Paper Moon
+is IMAX: True
+2D	voice_over: german	
+
+Viskningar och rop
+is IMAX: True
+2D	voice_over: english	
+
+Solaris
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: czech	
+
+Le samouraï
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: czech	
+
+Cool Hand Luke
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: german	
+
+Persona
+is IMAX: False
+3D	voice_over: polish	
+
+Andrei Rublev
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+La battaglia di Algeri
+is IMAX: False
+3D	voice_over: polish	
+
+El ángel exterminador
+is IMAX: True
+3D	
+
+What Ever Happened to Baby Jane?
+is IMAX: False
+2D	dubbing: czech	
+3D	subtitles: polish	
+
+Sanjuro
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: german	
+
+The Man Who Shot Liberty Valance
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Ivanovo detstvo
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+Jungfrukällan
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: slovene	
+
+Inherit the Wind
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Les quatre cents coups
+is IMAX: False
+2D	voice_over: english	
+
+Ben-Hur
+is IMAX: False
+2D	voice_over: english	
+
+Kakushi-toride no san-akunin
+is IMAX: True
+3D	voice_over: polish	
+
+Le notti di Cabiria
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Kumonosu-jo
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: german	
+
+The Bridge on the River Kwai
+is IMAX: True
+2D	voice_over: slovene	
+
+Du rififi chez les hommes
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+On the Waterfront
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Le salaire de la peur
+is IMAX: True
+3D	voice_over: polish	
+
+Ace in the Hole
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: czech	
+
+White Heat
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+The Third Man
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+The Red Shoes
+is IMAX: False
+2D	voice_over: slovene	
+
+The Shop Around the Corner
+is IMAX: True
+2D	voice_over: english	
+
+Rebecca
+is IMAX: False
+2D	voice_over: english	
+
+Mr. Smith Goes to Washington
+is IMAX: False
+3D	dubbing: slovene	
+2D	subtitles: slovene	
+
+Gone with the Wind
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: polish	
+
+La Grande Illusion
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+It Happened One Night
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: polish	
+
+La passion de Jeanne dArc
+is IMAX: False
+2D	
+
+The Circus
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Sunrise: A Song of Two Humans
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+The General
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Das Cabinet des Dr. Caligari
+is IMAX: False
+2D	voice_over: german	
+
+Badhaai ho
+is IMAX: False
+3D	voice_over: english	
+
+Togo
+is IMAX: True
+2D	voice_over: english	
+
+Airlift
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Bajrangi Bhaijaan
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: polish	
+
+Baby
+is IMAX: False
+3D	voice_over: polish	
+
+La La Land
+is IMAX: False
+2D	
+
+Lion
+is IMAX: False
+3D	voice_over: polish	
+
+The Martian
+is IMAX: False
+2D	voice_over: polish	
+
+Zootopia
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Bãhubali: The Beginning
+is IMAX: True
+3D	voice_over: english	
+
+Kaguyahime no monogatari
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Wonder
+is IMAX: False
+2D	voice_over: polish	
+
+Gully Boy
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Special Chabbis
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Short Term 12
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Serbuan maut 2: Berandal
+is IMAX: True
+2D	voice_over: czech	
+
+The Imitation Game
+is IMAX: True
+3D	dubbing: czech	
+2D	subtitles: czech	
+
+Guardians of the Galaxy
+is IMAX: True
+2D	voice_over: english	
+
+Blade Runner 2049
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Her
+is IMAX: False
+3D	voice_over: english	
+
+Bohemian Rhapsody
+is IMAX: False
+2D	voice_over: polish	
+
+The Revenant
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+The Perks of Being a Wallflower
+is IMAX: False
+2D	voice_over: polish	
+
+Tropa de Elite 2: O Inimigo Agora é Outro
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Kings Speech
+is IMAX: True
+3D	voice_over: czech	
+
+The Help
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Deadpool
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Darbareye Elly
+is IMAX: True
+3D	voice_over: slovene	
+
+Dev.D
+is IMAX: False
+2D	voice_over: english	
+
+Yip Man
+is IMAX: True
+2D	voice_over: german	
+
+My Name Is Khan
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Nefes: Vatan Sagolsun
+is IMAX: True
+3D	voice_over: english	
+
+Slumdog Millionaire
+is IMAX: True
+3D	voice_over: czech	
+
+Black Swan
+is IMAX: True
+3D	
+
+Tropa de Elite
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: czech	
+
+The Avengers
+is IMAX: True
+2D	voice_over: polish	
+
+Persepolis
+is IMAX: False
+2D	
+
+Dallas Buyers Club
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: czech	
+
+The Pursuit of Happyness
+is IMAX: True
+3D	dubbing: english	
+3D	subtitles: english	
+
+Blood Diamond
+is IMAX: False
+2D	dubbing: czech	
+3D	subtitles: english	
+
+The Bourne Ultimatum
+is IMAX: False
+2D	voice_over: slovene	
+
+Bin-jip
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Sin City
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Le scaphandre et le papillon
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+G.O.R.A.
+is IMAX: False
+3D	voice_over: polish	
+
+Ratatouille
+is IMAX: True
+3D	dubbing: slovene	
+2D	subtitles: polish	
+
+Casino Royale
+is IMAX: False
+3D	voice_over: polish	
+
+Kill Bill: Vol. 2
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Vozvrashchenie
+is IMAX: False
+3D	voice_over: polish	
+
+Bom yeoreum gaeul gyeoul geurigo bom
+is IMAX: True
+2D	voice_over: slovene	
+
+Mar adentro
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Cinderella Man
+is IMAX: False
+3D	voice_over: polish	
+
+Mou gaan dou
+is IMAX: True
+2D	
+
+Pirates of the Caribbean: The Curse of the Black Pearl
+is IMAX: False
+3D	voice_over: english	
+
+Big Fish
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: czech	
+
+The Incredibles
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Yeopgijeogin geunyeo
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+Dogville
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Vizontele
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Donnie Darko
+is IMAX: True
+3D	dubbing: english	
+3D	subtitles: english	
+
+Magnolia
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Dancer in the Dark
+is IMAX: True
+2D	voice_over: english	
+
+The Straight Story
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: slovene	
+
+Pâfekuto burû
+is IMAX: True
+2D	voice_over: slovene	
+
+Festen
+is IMAX: False
+3D	
+
+Central do Brasil
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+The Iron Giant
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Knockin on Heavens Door
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: english	
+
+Sling Blade
+is IMAX: True
+3D	voice_over: slovene	
+
+Secrets & Lies
+is IMAX: True
+2D	voice_over: polish	
+
+Twelve Monkeys
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: polish	
+
+Kôkaku Kidôtai
+is IMAX: True
+3D	
+
+The Nightmare Before Christmas
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: polish	
+
+Groundhog Day
+is IMAX: True
+2D	voice_over: polish	
+
+Bound by Honor
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: english	
+
+Scent of a Woman
+is IMAX: True
+2D	
+
+Aladdin
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: german	
+
+JFK
+is IMAX: True
+3D	dubbing: czech	
+2D	subtitles: polish	
+
+Beauty and the Beast
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Dances with Wolves
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Do the Right Thing
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: czech	
+
+Rain Man
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Akira
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+The Princess Bride
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Der Himmel über Berlin
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+Au revoir les enfants
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+Tenkû no shiro Rapyuta
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+The Terminator
+is IMAX: True
+2D	
+
+Gandhi
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Kagemusha
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Being There
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+Annie Hall
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Jaws
+is IMAX: False
+2D	voice_over: english	
+
+Dog Day Afternoon
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Young Frankenstein
+is IMAX: False
+2D	voice_over: polish	
+
+Papillon
+is IMAX: False
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+The Exorcist
+is IMAX: False
+2D	dubbing: czech	
+3D	subtitles: english	
+
+Sleuth
+is IMAX: False
+2D	voice_over: german	
+
+The Last Picture Show
+is IMAX: True
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+Fiddler on the Roof
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: german	
+
+Il conformista
+is IMAX: True
+2D	voice_over: polish	
+
+Butch Cassidy and the Sundance Kid
+is IMAX: True
+3D	dubbing: english	
+3D	subtitles: english	
+
+Rosemarys Baby
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Planet of the Apes
+is IMAX: False
+3D	dubbing: german	
+2D	subtitles: polish	
+
+The Graduate
+is IMAX: True
+3D	voice_over: polish	
+
+Whos Afraid of Virginia Woolf?
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+The Sound of Music
+is IMAX: False
+3D	dubbing: german	
+2D	subtitles: polish	
+
+Doctor Zhivago
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: slovene	
+
+Per un pugno di dollari
+is IMAX: False
+3D	voice_over: english	
+
+8½
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: czech	
+
+Vivre sa vie: Film en douze tableaux
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+The Hustler
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: polish	
+
+La dolce vita
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Rio Bravo
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: polish	
+
+Anatomy of a Murder
+is IMAX: False
+2D	
+
+Touch of Evil
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Cat on a Hot Tin Roof
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: czech	
+
+Sweet Smell of Success
+is IMAX: True
+2D	voice_over: english	
+
+The Killing
+is IMAX: False
+2D	dubbing: slovene	
+3D	subtitles: english	
+
+The Night of the Hunter
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+La Strada
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: polish	
+
+Les diaboliques
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Stalag 17
+is IMAX: True
+2D	voice_over: english	
+
+Roman Holiday
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: german	
+
+A Streetcar Named Desire
+is IMAX: False
+2D	voice_over: polish	
+
+In a Lonely Place
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Kind Hearts and Coronets
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: czech	
+
+Rope
+is IMAX: False
+2D	voice_over: polish	
+
+Out of the Past
+is IMAX: False
+2D	
+
+Brief Encounter
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: english	
+
+Laura
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+The Best Years of Our Lives
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Arsenic and Old Lace
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: czech	
+
+The Maltese Falcon
+is IMAX: False
+2D	
+
+The Grapes of Wrath
+is IMAX: True
+3D	voice_over: english	
+
+The Wizard of Oz
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+La règle du jeu
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: english	
+
+The Thin Man
+is IMAX: False
+3D	dubbing: english	
+3D	subtitles: english	
+
+All Quiet on the Western Front
+is IMAX: False
+3D	voice_over: polish	
+
+Bronenosets Potemkin
+is IMAX: False
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+Knives Out
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Manbiki kazoku
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: polish	
+
+Marriage Story
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Call Me by Your Name
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: polish	
+
+I, Daniel Blake
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: english	
+
+Isle of Dogs
+is IMAX: False
+2D	
+
+Hunt for the Wilderpeople
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Captain Fantastic
+is IMAX: False
+2D	
+
+Sing Street
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Thor: Ragnarok
+is IMAX: True
+3D	voice_over: german	
+
+Jojo Rabbit
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Arrival
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Star Wars: Episode VII - The Force Awakens
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+Before Midnight
+is IMAX: True
+2D	voice_over: polish	
+
+X-Men: Days of Future Past
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Bir Zamanlar Anadoluda
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+The Artist
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Edge of Tomorrow
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Amour
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Un prophète
+is IMAX: True
+2D	voice_over: polish	
+
+Moon
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Låt den rätte komma in
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: czech	
+
+District 9
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+The Wrestler
+is IMAX: False
+2D	voice_over: polish	
+
+Jab We Met
+is IMAX: False
+2D	voice_over: polish	
+
+Boyhood
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+4 luni, 3 saptamâni si 2 zile
+is IMAX: False
+3D	voice_over: slovene	
+
+Star Trek
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+In Bruges
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+The Man from Earth
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: slovene	
+
+Letters from Iwo Jima
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: czech	
+
+The Fall
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Life of Pi
+is IMAX: False
+2D	voice_over: slovene	
+
+Fantastic Mr. Fox
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: polish	
+
+C.R.A.Z.Y.
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Tôkyô goddofâzâzu
+is IMAX: False
+2D	
+
+Les choristes
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: english	
+
+Iron Man
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Shaun of the Dead
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Kal Ho Naa Ho
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: czech	
+
+Gegen die Wand
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Mystic River
+is IMAX: False
+2D	voice_over: polish	
+
+Harry Potter and the Prisoner of Azkaban
+is IMAX: False
+2D	voice_over: english	
+
+Ying xiong
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: english	
+
+Hable con ella
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+No Mans Land
+is IMAX: False
+3D	dubbing: english	
+3D	subtitles: english	
+
+Cowboy Bebop: Tengoku no tobira
+is IMAX: False
+2D	voice_over: english	
+
+The Bourne Identity
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+Nueve reinas
+is IMAX: True
+2D	voice_over: german	
+
+Children of Men
+is IMAX: False
+3D	
+
+Almost Famous
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: polish	
+
+Mulholland Dr.
+is IMAX: False
+2D	voice_over: polish	
+
+Toy Story 2
+is IMAX: True
+2D	voice_over: english	
+
+Boogie Nights
+is IMAX: False
+2D	
+
+Mimi wo sumaseba
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Once Were Warriors
+is IMAX: False
+3D	dubbing: german	
+3D	subtitles: polish	
+
+True Romance
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+Trois couleurs: Bleu
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Jûbê ninpûchô
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Carlitos Way
+is IMAX: True
+2D	voice_over: polish	
+
+Edward Scissorhands
+is IMAX: True
+2D	voice_over: english	
+
+My Left Foot: The Story of Christy Brown
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Crimes and Misdemeanors
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+The Untouchables
+is IMAX: False
+2D	voice_over: english	
+
+Hannah and Her Sisters
+is IMAX: False
+2D	voice_over: polish	
+
+Brazil
+is IMAX: True
+2D	voice_over: polish	
+
+This Is Spinal Tap
+is IMAX: True
+2D	voice_over: polish	
+
+A Christmas Story
+is IMAX: True
+3D	voice_over: english	
+
+The Blues Brothers
+is IMAX: True
+2D	voice_over: polish	
+
+Manhattan
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: slovene	
+
+All That Jazz
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: slovene	
+
+Dawn of the Dead
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+All the Presidents Men
+is IMAX: False
+3D	voice_over: english	
+
+La montaña sagrada
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Amarcord
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Le charme discret de la bourgeoisie
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: german	
+
+Aguirre, der Zorn Gottes
+is IMAX: False
+3D	dubbing: slovene	
+2D	subtitles: german	
+
+Harold and Maude
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Patton
+is IMAX: True
+2D	voice_over: polish	
+
+The Wild Bunch
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+Night of the Living Dead
+is IMAX: False
+3D	voice_over: english	
+
+The Lion in Winter
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: german	
+
+In the Heat of the Night
+is IMAX: True
+2D	voice_over: slovene	
+
+Charade
+is IMAX: True
+2D	voice_over: english	
+
+The Manchurian Candidate
+is IMAX: True
+2D	voice_over: czech	
+
+Spartacus
+is IMAX: True
+3D	voice_over: polish	
+
+Lavventura
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+Hiroshima mon amour
+is IMAX: False
+2D	voice_over: polish	
+
+The Ten Commandments
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+The Searchers
+is IMAX: False
+2D	voice_over: slovene	
+
+East of Eden
+is IMAX: True
+3D	dubbing: czech	
+3D	subtitles: german	
+
+High Noon
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: german	
+
+Strangers on a Train
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Harvey
+is IMAX: False
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+Miracle on 34th Street
+is IMAX: True
+3D	voice_over: polish	
+
+Notorious
+is IMAX: False
+3D	voice_over: slovene	
+
+The Big Sleep
+is IMAX: True
+3D	voice_over: polish	
+
+The Lost Weekend
+is IMAX: True
+3D	voice_over: polish	
+
+The Philadelphia Story
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+His Girl Friday
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+The Adventures of Robin Hood
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+A Night at the Opera
+is IMAX: True
+2D	voice_over: slovene	
+
+King Kong
+is IMAX: False
+2D	voice_over: slovene	
+
+Freaks
+is IMAX: True
+2D	voice_over: czech	
+
+Nosferatu
+is IMAX: True
+2D	voice_over: german	
+
+The Gentlemen
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Raazi
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Sound of Metal
+is IMAX: True
+2D	voice_over: polish	
+
+Forushande
+is IMAX: True
+2D	voice_over: polish	
+
+Dunkirk
+is IMAX: False
+2D	voice_over: polish	
+
+Perfetti sconosciuti
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Hidden Figures
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Paddington 2
+is IMAX: False
+3D	dubbing: czech	
+3D	subtitles: czech	
+
+Udta Punjab
+is IMAX: False
+2D	dubbing: german	
+2D	subtitles: english	
+
+Kubo and the Two Strings
+is IMAX: False
+2D	
+
+M.S. Dhoni: The Untold Story
+is IMAX: True
+2D	
+
+Manchester by the Sea
+is IMAX: False
+2D	voice_over: german	
+
+Under sandet
+is IMAX: True
+3D	voice_over: english	
+
+Rogue One
+is IMAX: False
+3D	voice_over: polish	
+
+Captain America: Civil War
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Hateful Eight
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: german	
+
+Little Women
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: czech	
+
+Loving Vincent
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Pride
+is IMAX: False
+3D	dubbing: slovene	
+2D	subtitles: slovene	
+
+Nightcrawler
+is IMAX: True
+2D	dubbing: czech	
+3D	subtitles: polish	
+
+Le passé
+is IMAX: True
+2D	
+
+La grande bellezza
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+The Lunchbox
+is IMAX: True
+2D	voice_over: slovene	
+
+Vicky Donor
+is IMAX: False
+2D	
+
+Big Hero 6
+is IMAX: True
+2D	voice_over: polish	
+
+About Time
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+English Vinglish
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Kaze tachinu
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: czech	
+
+Toy Story 4
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+La migliore offerta
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: czech	
+
+Moonrise Kingdom
+is IMAX: False
+2D	
+
+How to Train Your Dragon 2
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: slovene	
+
+The Big Short
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+Kokuhaku
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Ang-ma-reul bo-at-da
+is IMAX: True
+2D	voice_over: english	
+
+The Girl with the Dragon Tattoo
+is IMAX: True
+3D	voice_over: polish	
+
+Captain Phillips
+is IMAX: False
+2D	voice_over: english	
+
+Ajeossi
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Straight Outta Compton
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Irishman
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: german	
+
+Madeo
+is IMAX: True
+3D	voice_over: polish	
+
+Chugyeokja
+is IMAX: False
+3D	voice_over: english	
+
+The Hobbit: The Desolation of Smaug
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Das weiße Band - Eine deutsche Kindergeschichte
+is IMAX: False
+2D	voice_over: english	
+
+Män som hatar kvinnor
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Skyfall
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: german	
+
+The Trial of the Chicago 7
+is IMAX: False
+2D	voice_over: german	
+
+Druk
+is IMAX: False
+2D	voice_over: english	
+
+The Fighter
+is IMAX: False
+3D	
+
+Taken
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: polish	
+
+The Boy in the Striped Pyjamas
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Once
+is IMAX: False
+2D	voice_over: slovene	
+
+The Hobbit: An Unexpected Journey
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Auf der anderen Seite
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: slovene	
+
+Atonement
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Drive
+is IMAX: True
+2D	voice_over: english	
+
+American Gangster
+is IMAX: True
+2D	dubbing: czech	
+3D	subtitles: german	
+
+Avatar
+is IMAX: True
+2D	
+
+Mr. Nobody
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: german	
+
+Apocalypto
+is IMAX: True
+2D	
+
+Little Miss Sunshine
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Hot Fuzz
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: german	
+
+The Curious Case of Benjamin Button
+is IMAX: True
+3D	voice_over: czech	
+
+Veer-Zaara
+is IMAX: False
+2D	voice_over: polish	
+
+Adams æbler
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Pride & Prejudice
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+The Worlds Fastest Indian
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Serenity
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: czech	
+
+Walk the Line
+is IMAX: False
+2D	voice_over: english	
+
+Ondskan
+is IMAX: True
+2D	voice_over: czech	
+
+The Notebook
+is IMAX: True
+3D	dubbing: german	
+2D	subtitles: german	
+
+Diarios de motocicleta
+is IMAX: True
+2D	
+
+Lilja 4-ever
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Les triplettes de Belleville
+is IMAX: True
+2D	voice_over: german	
+
+Gongdong gyeongbi guyeok JSA
+is IMAX: True
+2D	voice_over: polish	
+
+The Count of Monte Cristo
+is IMAX: True
+2D	voice_over: slovene	
+
+Waking Life
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Remember the Titans
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: english	
+
+Wo hu cang long
+is IMAX: False
+3D	voice_over: english	
+
+Todo sobre mi madre
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: german	
+
+Cast Away
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: slovene	
+
+The Boondock Saints
+is IMAX: False
+2D	voice_over: german	
+
+The Insider
+is IMAX: False
+2D	voice_over: polish	
+
+October Sky
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: polish	
+
+Shrek
+is IMAX: False
+2D	voice_over: slovene	
+
+Titanic
+is IMAX: False
+2D	voice_over: english	
+
+Hana-bi
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+Gattaca
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+The Game
+is IMAX: False
+3D	voice_over: polish	
+
+Breaking the Waves
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Ed Wood
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Whats Eating Gilbert Grape
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: czech	
+
+Tombstone
+is IMAX: True
+3D	voice_over: english	
+
+The Sandlot
+is IMAX: False
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+The Remains of the Day
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Naked
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+The Fugitive
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+A Bronx Tale
+is IMAX: True
+2D	voice_over: english	
+
+Batman: Mask of the Phantasm
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Lat sau san taam
+is IMAX: True
+2D	voice_over: polish	
+
+Night on Earth
+is IMAX: False
+2D	voice_over: polish	
+
+La double vie de Véronique
+is IMAX: True
+2D	voice_over: polish	
+
+Boyz n the Hood
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Misery
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: slovene	
+
+Awakenings
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: czech	
+
+Majo no takkyûbin
+is IMAX: True
+3D	dubbing: english	
+3D	subtitles: english	
+
+Glory
+is IMAX: True
+2D	voice_over: polish	
+
+Dip huet seung hung
+is IMAX: True
+2D	voice_over: polish	
+
+Back to the Future Part II
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: czech	
+
+Mississippi Burning
+is IMAX: False
+3D	dubbing: german	
+2D	subtitles: polish	
+
+Predator
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: polish	
+
+Evil Dead II
+is IMAX: True
+3D	
+
+Ferris Buellers Day Off
+is IMAX: True
+2D	voice_over: english	
+
+Down by Law
+is IMAX: True
+3D	voice_over: english	
+
+The Goonies
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: polish	
+
+The Color Purple
+is IMAX: True
+3D	
+
+The Breakfast Club
+is IMAX: True
+3D	dubbing: german	
+2D	subtitles: polish	
+
+The Killing Fields
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: english	
+
+Ghost Busters
+is IMAX: False
+3D	voice_over: polish	
+
+The Right Stuff
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+The King of Comedy
+is IMAX: True
+2D	voice_over: polish	
+
+E.T. the Extra-Terrestrial
+is IMAX: False
+3D	voice_over: german	
+
+Kramer vs. Kramer
+is IMAX: True
+2D	
+
+Days of Heaven
+is IMAX: True
+2D	voice_over: german	
+
+The Outlaw Josey Wales
+is IMAX: True
+2D	voice_over: polish	
+
+The Man Who Would Be King
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Conversation
+is IMAX: True
+2D	voice_over: czech	
+
+La planète sauvage
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: english	
+
+The Day of the Jackal
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: german	
+
+Badlands
+is IMAX: True
+2D	voice_over: english	
+
+Cabaret
+is IMAX: False
+2D	voice_over: english	
+
+Willy Wonka & the Chocolate Factory
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: czech	
+
+Midnight Cowboy
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Wait Until Dark
+is IMAX: True
+2D	
+
+Guess Whos Coming to Dinner
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Bonnie and Clyde
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: english	
+
+My Fair Lady
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Mary Poppins
+is IMAX: False
+2D	voice_over: english	
+
+The Longest Day
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Jules et Jim
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Innocents
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+À bout de souffle
+is IMAX: True
+2D	voice_over: slovene	
+
+Red River
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: german	
+
+Key Largo
+is IMAX: True
+3D	
+
+To Have and Have Not
+is IMAX: True
+3D	voice_over: slovene	
+
+Gaslight
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Shadow of a Doubt
+is IMAX: False
+2D	voice_over: english	
+
+Stagecoach
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: czech	
+
+The Lady Vanishes
+is IMAX: True
+3D	dubbing: czech	
+2D	subtitles: polish	
+
+Bringing Up Baby
+is IMAX: True
+2D	
+
+Bride of Frankenstein
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Duck Soup
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Scarface: The Shame of the Nation
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+Frankenstein
+is IMAX: False
+3D	voice_over: czech	
+
+Roma
+is IMAX: True
+3D	dubbing: slovene	
+3D	subtitles: polish	
+
+Gods Own Country
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Deadpool 2
+is IMAX: True
+2D	voice_over: polish	
+
+Wind River
+is IMAX: False
+3D	voice_over: german	
+
+Get Out
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Mission: Impossible - Fallout
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+En man som heter Ove
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+What We Do in the Shadows
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Omoide no Mânî
+is IMAX: False
+2D	
+
+The Theory of Everything
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+Kingsman: The Secret Service
+is IMAX: False
+2D	voice_over: polish	
+
+The Fault in Our Stars
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+Me and Earl and the Dying Girl
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Birdman or (The Unexpected Virtue of Ignorance)
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: english	
+
+La vie dAdèle
+is IMAX: True
+3D	voice_over: polish	
+
+Kai po che!
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: slovene	
+
+The Broken Circle Breakdown
+is IMAX: False
+3D	voice_over: german	
+
+Captain America: The Winter Soldier
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Rockstar
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Nebraska
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Wreck-It Ralph
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: german	
+
+Le Petit Prince
+is IMAX: True
+3D	dubbing: slovene	
+2D	subtitles: english	
+
+Detachment
+is IMAX: True
+2D	
+
+Midnight in Paris
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+The Lego Movie
+is IMAX: False
+3D	voice_over: polish	
+
+Gravity
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Star Trek Into Darkness
+is IMAX: True
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+Beasts of No Nation
+is IMAX: False
+2D	voice_over: english	
+
+The Social Network
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+X: First Class
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+The Hangover
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Silver Linings Playbook
+is IMAX: True
+3D	voice_over: german	
+
+Argo
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+(500) Days of Summer
+is IMAX: True
+3D	voice_over: german	
+
+Harry Potter and the Deathly Hallows: Part 1
+is IMAX: False
+2D	voice_over: english	
+
+Gake no ue no Ponyo
+is IMAX: True
+2D	voice_over: polish	
+
+Frost/Nixon
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: slovene	
+
+Papurika
+is IMAX: False
+2D	voice_over: german	
+
+Changeling
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Flipped
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Toki o kakeru shôjo
+is IMAX: True
+3D	dubbing: slovene	
+2D	subtitles: slovene	
+
+Death Note: Desu nôto
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: slovene	
+
+This Is England
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: german	
+
+Ex Machina
+is IMAX: True
+3D	dubbing: czech	
+2D	subtitles: czech	
+
+Efter brylluppet
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: german	
+
+The Last King of Scotland
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: german	
+
+Zodiac
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Lucky Number Slevin
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Joyeux Noël
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+Control
+is IMAX: True
+2D	voice_over: czech	
+
+Tangled
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Zwartboek
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Brokeback Mountain
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+3:10 to Yuma
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: slovene	
+
+Crash
+is IMAX: False
+2D	voice_over: polish	
+
+Kung fu
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Bourne Supremacy
+is IMAX: True
+3D	voice_over: english	
+
+The Machinist
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: german	
+
+Ray
+is IMAX: False
+2D	voice_over: czech	
+
+Lost in Translation
+is IMAX: True
+2D	voice_over: polish	
+
+Harry Potter and the Goblet of Fire
+is IMAX: False
+2D	
+
+Man on Fire
+is IMAX: False
+3D	voice_over: english	
+
+Coraline
+is IMAX: True
+2D	dubbing: german	
+3D	subtitles: polish	
+
+The Last Samurai
+is IMAX: False
+2D	voice_over: polish	
+
+The Magdalene Sisters
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Good Bye Lenin!
+is IMAX: True
+2D	voice_over: english	
+
+In America
+is IMAX: True
+3D	dubbing: german	
+3D	subtitles: polish	
+
+I Am Sam
+is IMAX: True
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+Adaptation.
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: polish	
+
+Black Hawk Down
+is IMAX: True
+3D	voice_over: english	
+
+Road to Perdition
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+Das Experiment
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Billy Elliot
+is IMAX: False
+3D	dubbing: polish	
+2D	subtitles: english	
+
+Hedwig and the Angry Inch
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Oceans Eleven
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: czech	
+
+Vampire Hunter D: Bloodlust
+is IMAX: False
+2D	
+
+O Brother, Where Art Thou?
+is IMAX: False
+2D	voice_over: english	
+
+Interstate 60: Episodes of the Road
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+South Park: Bigger, Longer & Uncut
+is IMAX: False
+2D	voice_over: german	
+
+Office Space
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Happiness
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: german	
+
+Training Day
+is IMAX: False
+2D	voice_over: polish	
+
+Rushmore
+is IMAX: True
+3D	dubbing: slovene	
+3D	subtitles: polish	
+
+Abre los ojos
+is IMAX: False
+3D	dubbing: english	
+3D	subtitles: czech	
+
+Being John Malkovich
+is IMAX: True
+2D	dubbing: german	
+2D	subtitles: polish	
+
+As Good as It Gets
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: slovene	
+
+The Fifth Element
+is IMAX: False
+3D	voice_over: english	
+
+Le dîner de cons
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Donnie Brasco
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: czech	
+
+Shine
+is IMAX: False
+3D	
+
+Primal Fear
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Hamlet
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+A Little Princess
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Do lok tin si
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Il postino
+is IMAX: True
+3D	dubbing: czech	
+2D	subtitles: czech	
+
+Clerks
+is IMAX: False
+3D	
+
+Short Cuts
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Philadelphia
+is IMAX: True
+2D	voice_over: slovene	
+
+The Muppet Christmas Carol
+is IMAX: False
+2D	voice_over: polish	
+
+Malcolm X
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+The Last of the Mohicans
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: slovene	
+
+Kurenai no buta
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: english	
+
+Glengarry Glen Ross
+is IMAX: False
+2D	dubbing: czech	
+2D	subtitles: english	
+
+A Few Good Men
+is IMAX: True
+2D	dubbing: slovene	
+2D	subtitles: slovene	
+
+Fried Green Tomatoes
+is IMAX: True
+2D	voice_over: slovene	
+
+Barton Fink
+is IMAX: True
+2D	voice_over: english	
+
+Millers Crossing
+is IMAX: True
+3D	voice_over: german	
+
+Who Framed Roger Rabbit
+is IMAX: False
+2D	voice_over: polish	
+
+Spoorloos
+is IMAX: False
+2D	voice_over: german	
+
+Withnail & I
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+The Last Emperor
+is IMAX: False
+2D	dubbing: slovene	
+2D	subtitles: polish	
+
+Empire of the Sun
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+Der Name der Rose
+is IMAX: True
+2D	
+
+Blue Velvet
+is IMAX: True
+3D	voice_over: polish	
+
+The Purple Rose of Cairo
+is IMAX: False
+3D	dubbing: english	
+3D	subtitles: english	
+
+After Hours
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Zelig
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+The Verdict
+is IMAX: True
+2D	dubbing: czech	
+3D	subtitles: polish	
+
+Star Trek II: The Wrath of Khan
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: polish	
+
+First Blood
+is IMAX: True
+3D	dubbing: german	
+2D	subtitles: slovene	
+
+Ordinary People
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: english	
+
+Airplane!
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Rupan sansei: Kariosutoro no shiro
+is IMAX: False
+2D	dubbing: english	
+2D	subtitles: english	
+
+Halloween
+is IMAX: True
+2D	voice_over: polish	
+
+Le locataire
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: english	
+
+Love and Death
+is IMAX: False
+2D	voice_over: slovene	
+
+The Taking of Pelham One Two Three
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: english	
+
+Blazing Saddles
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Serpico
+is IMAX: True
+2D	dubbing: english	
+3D	subtitles: polish	
+
+Enter the Dragon
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+Deliverance
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+The French Connection
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Dirty Harry
+is IMAX: True
+2D	voice_over: english	
+
+Where Eagles Dare
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+The Odd Couple
+is IMAX: False
+3D	voice_over: polish	
+
+The Dirty Dozen
+is IMAX: False
+2D	voice_over: polish	
+
+Belle de jour
+is IMAX: True
+2D	dubbing: english	
+2D	subtitles: slovene	
+
+A Man for All Seasons
+is IMAX: True
+3D	voice_over: english	
+
+Repulsion
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: slovene	
+
+Zulu
+is IMAX: False
+2D	dubbing: german	
+3D	subtitles: english	
+
+Goldfinger
+is IMAX: True
+2D	voice_over: slovene	
+
+The Birds
+is IMAX: False
+2D	voice_over: slovene	
+
+Cape Fear
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: czech	
+
+Peeping Tom
+is IMAX: False
+3D	
+
+The Magnificent Seven
+is IMAX: True
+2D	voice_over: polish	
+
+Les yeux sans visage
+is IMAX: False
+2D	voice_over: polish	
+
+Invasion of the Body Snatchers
+is IMAX: False
+2D	voice_over: english	
+
+Rebel Without a Cause
+is IMAX: True
+2D	dubbing: czech	
+2D	subtitles: german	
+
+The Ladykillers
+is IMAX: False
+2D	dubbing: slovene	
+3D	subtitles: polish	
+
+Sabrina
+is IMAX: False
+3D	dubbing: czech	
+2D	subtitles: slovene	
+
+The Quiet Man
+is IMAX: False
+2D	voice_over: english	
+
+The Day the Earth Stood Still
+is IMAX: True
+3D	dubbing: polish	
+3D	subtitles: czech	
+
+The African Queen
+is IMAX: False
+3D	dubbing: english	
+2D	subtitles: english	
+
+Gilda
+is IMAX: True
+2D	voice_over: english	
+
+Fantasia
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+The Invisible Man
+is IMAX: False
+2D	dubbing: english	
+3D	subtitles: english	
+
+Dark Waters
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: slovene	
+
+Searching
+is IMAX: False
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Once Upon a Time... in Hollywood
+is IMAX: True
+3D	dubbing: polish	
+2D	subtitles: polish	
+
+Nelyubov
+is IMAX: True
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+The Florida Project
+is IMAX: True
+2D	voice_over: polish	
+
+Just Mercy
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Gifted
+is IMAX: True
+2D	dubbing: czech	
+3D	subtitles: polish	
+
+The Peanut Butter Falcon
+is IMAX: True
+2D	voice_over: polish	
+
+Victoria
+is IMAX: True
+2D	dubbing: slovene	
+3D	subtitles: german	
+
+Mustang
+is IMAX: True
+3D	dubbing: english	
+2D	subtitles: czech	
+
+Guardians of the Galaxy Vol. 2
+is IMAX: False
+2D	voice_over: english	
+
+Baby Driver
+is IMAX: False
+3D	
+
+Only the Brave
+is IMAX: True
+2D	dubbing: polish	
+3D	subtitles: polish	
+
+Bridge of Spies
+is IMAX: False
+2D	voice_over: german	
+
+Incredibles 2
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Moana
+is IMAX: False
+2D	dubbing: polish	
+2D	subtitles: polish	
+
+Sicario
+is IMAX: True
+2D	
+
+Creed
+is IMAX: False
+3D	voice_over: english	
 

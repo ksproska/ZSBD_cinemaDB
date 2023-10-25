@@ -14,10 +14,10 @@ from db_generation.tables.ticket import Ticket
 
 
 def generate_db():
-    number_of_rooms = 5
-    number_of_movies = 50
-    number_of_days_to_create_shows_for = 5
-    number_of_users = 50
+    number_of_rooms = 25
+    number_of_movies = 900
+    number_of_days_to_create_shows_for = 30 * 6
+    number_of_users = 10000
 
     rooms = Room.get_all_objects(number_of_rooms)
     seats = Seat.get_all_objects(rooms)
