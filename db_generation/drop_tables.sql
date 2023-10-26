@@ -1,0 +1,9 @@
+drop table TICKETS;
+drop table SHOWS;
+drop table SEATS;
+drop table ROOMS;
+drop table MOVIEVERSIONS;
+drop table MOVIES;
+drop table LANGUAGES;
+drop table CINEMAUSERS;
+drop table AGERESTRICTIONS;
