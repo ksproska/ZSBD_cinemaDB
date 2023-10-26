@@ -70,7 +70,7 @@ def generate_db():
         f.write(Show.get_dates_summary(shows))
 
     with open("setup_shows.txt", "w", encoding="utf8") as f:
-        for show in tqdm(shows[:100:10]):
+        for show in tqdm(shows[:100:5]):
             f.write(show.get_show_schema(tickets, seats) + "\n")
         f.write("\n...")
 
