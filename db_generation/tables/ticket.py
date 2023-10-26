@@ -93,12 +93,12 @@ class Ticket(ObjectWithCounter, AddableToDatabase):
             seats_in_room = [s for s in seats if s.fk_room == room.primary_key_value]
             numb_of_rows = seats_in_room[-1].seat_row.value
             numb_of_columns = seats_in_room[-1].seat_number.value
-            show_fillup_probability = random.random() * 0.75
+            show_fillup_factor = random.random() * 2  # 0..2
             for seat in seats_in_room:
-                rowprob = (1 - seat.seat_row.value / numb_of_rows)
-                colprob = abs(seat.seat_number.value - (numb_of_columns/2))/(numb_of_columns/2)
-                base = (rowprob + colprob)
-                if base - show_fillup_probability < random.random():
+                row_likablility = seat.seat_row.value / numb_of_rows
+                column_likability = 1 - abs(seat.seat_number.value - (numb_of_columns / 2)) / (numb_of_columns / 2)
+                seat_probability = (row_likablility + column_likability) / 2
+                if random.random() < show_fillup_factor * seat_probability:
                     if random.random() < cls.probability_of_user_purchase:
                         user = random.choice(users)
                         all_objects.append(Ticket(seat, show, user))

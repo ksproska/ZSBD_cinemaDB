@@ -15,9 +15,10 @@ class CinemaUser(ObjectWithCounter, AddableToDatabase):
 
     def __init__(self):
         self.id_user = INTEGER(CinemaUser.next())
-        self.name = CHAR(self.faker.first_name())
-        self.surname = CHAR(self.faker.last_name())
-        self.email = CHAR(self.faker.email())
+        user = self.faker.simple_profile()
+        self.name = CHAR(user['username'])
+        self.surname = CHAR(user['name'])
+        self.email = CHAR(user['mail'])
         self.password = CHAR(f"{self.faker.word()}{self.faker.random_int()}")
         self.birth = DATE(self.faker.date_between(start_date=self.max_age, end_date=self.min_age))
 
