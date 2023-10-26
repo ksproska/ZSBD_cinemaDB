@@ -6,17 +6,17 @@ CREATE TABLE AgeRestrictions
 CREATE TABLE CinemaUsers
 (
     id_user  NUMBER PRIMARY KEY,
-    name     VARCHAR2(10) NOT NULL,
-    surname  VARCHAR2(10) NOT NULL,
+    name     VARCHAR2(50) NOT NULL,
+    surname  VARCHAR2(50) NOT NULL,
     email    VARCHAR2(50) NOT NULL,
-    password VARCHAR2(20) NOT NULL,
+    password VARCHAR2(50) NOT NULL,
     birth    DATE         NOT NULL
 );
 
 CREATE TABLE Rooms
 (
     id_room                 NUMBER PRIMARY KEY,
-    room_sign               VARCHAR2(20)                                              NOT NULL,
+    room_sign               VARCHAR2(50)                                              NOT NULL,
     floor_number            NUMBER                                                    NOT NULL,
     imax_capable            VARCHAR2(1) CHECK (imax_capable IN ('Y', 'N'))            NOT NULL,
     wheelchair_availability VARCHAR2(1) CHECK (wheelchair_availability IN ('Y', 'N')) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE Rooms
 
 CREATE TABLE Languages
 (
-    id_language   VARCHAR2(10) PRIMARY KEY,
+    id_language   VARCHAR2(50) PRIMARY KEY,
     language_name VARCHAR2(50) NOT NULL
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE Movies
     duration           NUMBER                                    NOT NULL,
     is_imax            VARCHAR2(1) CHECK (is_imax IN ('Y', 'N')) NOT NULL,
     fk_age_restriction VARCHAR2(50),
-    fk_language        VARCHAR2(10),
+    fk_language        VARCHAR2(50),
 
     FOREIGN KEY (fk_age_restriction)
         REFERENCES AgeRestrictions (age_restriction_name),
@@ -49,10 +49,10 @@ CREATE TABLE Movies
 CREATE TABLE MovieVersions
 (
     id_movie_version       NUMBER PRIMARY KEY,
-    dimension              VARCHAR2(10) NOT NULL,
-    fk_subtitles_language  VARCHAR2(10),
-    fk_dubbing_language    VARCHAR2(10),
-    fk_voice_over_language VARCHAR2(10),
+    dimension              VARCHAR2(50) NOT NULL,
+    fk_subtitles_language  VARCHAR2(50),
+    fk_dubbing_language    VARCHAR2(50),
+    fk_voice_over_language VARCHAR2(50),
     fk_movie               NUMBER,
 
     FOREIGN KEY (fk_subtitles_language)

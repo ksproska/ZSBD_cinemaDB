@@ -1,9 +1,0 @@
-sqlldr test/test age-restrictions.ctl
-sqlldr test/test cinema-users.ctl
-sqlldr test/test rooms.ctl
-sqlldr test/test languages.ctl
-sqlldr test/test movies.ctl
-sqlldr test/test movie-versions.ctl
-sqlldr test/test shows.ctl
-sqlldr test/test seats.ctl
-sqlldr test/test tickets.ctl
