@@ -11,6 +11,7 @@ from db_generation.tables.language import Language
 from db_generation.tables.movie import Movie
 from db_generation.tables.movie_version import MovieVersion
 from db_generation.tables.room import Room
+from db_generation.tables.seat import Seat
 from db_generation.types import INTEGER, DATE
 
 
@@ -23,7 +24,7 @@ class Show(ObjectWithCounter, AddableToDatabase):
     earliest_show_minute = 0
 
     faker = Faker()
-    oldest_date = (datetime.today() - relativedelta(years=5)).date()
+    oldest_date = (datetime.today() - relativedelta(months=3)).date()
     newest_date = (datetime.today() + relativedelta(months=1)).date()
     next_not_used_date = oldest_date
     movie_versions = set()
@@ -94,6 +95,46 @@ class Show(ObjectWithCounter, AddableToDatabase):
             if room.primary_key_value == self.fk_room:
                 return room
         return None
+
+    def get_show_schema(self, tickets, seats: list[Seat]):
+        discounts = {
+            0.1: "N-",
+            0.2: "S-",
+            0: "NV",
+            0.15: "SV",
+        }
+        room = self.get_room()
+        tickets_for_show = [t for t in tickets if t.fk_show == self.id_show]
+        seats_for_room = [s for s in seats if s.fk_room == room.id_room]
+        row_number = seats_for_room[0].seat_row.value
+        schema = f"{self.__class__.__name__} {self.id_show} ({int(100 * (len(tickets_for_show) / len(seats_for_room)))}%)\n"
+        for seat in seats_for_room:
+            seat_row = seat.seat_row.value
+            br = "" if seat_row == row_number else "\n"
+            t = "_"
+            d = "__"
+            for ticket in tickets_for_show:
+                if ticket.get_seat().id_seat == seat.id_seat:
+                    t = "X" if ticket.fk_user.value is None else "U"
+                    d = discounts[ticket.discount.value]
+                    break
+            schema += br + t + d + " "
+            row_number = seat_row
+        return schema + "\n"
+
+    @classmethod
+    def get_dates_summary(cls, shows):
+        last_date = shows[0].show_date.value
+        counter = 0
+        summary = ""
+        for show in shows:
+            if last_date == show.show_date.value:
+                counter += 1
+            else:
+                summary += f"{last_date}\t{counter}\n"
+                counter = 0
+                last_date = show.show_date.value
+        return summary
 
 
 class TestShow(unittest.TestCase):

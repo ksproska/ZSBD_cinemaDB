@@ -16,6 +16,7 @@ class MovieVersion(ObjectWithCounter, AddableToDatabase):
     dimensions = [dimension2d, dimension3d]
     weights = [7, 3]
     movies = set()
+    languages = {}
 
     def __init__(self, movie: Movie,
                  dubbing: Language | None = None,
@@ -31,6 +32,12 @@ class MovieVersion(ObjectWithCounter, AddableToDatabase):
         self.fk_movie = movie.primary_key_value
 
         self.movies.add(movie)
+        if dubbing is not None:
+            self.languages[dubbing.id_language.value] = dubbing
+        if subtitles is not None:
+            self.languages[subtitles.id_language.value] = subtitles
+        if voice_over is not None:
+            self.languages[voice_over.id_language.value] = voice_over
 
     @classmethod
     def get_all_objects_for_movie(cls, movie: Movie, languages: list[Language]):
@@ -76,6 +83,16 @@ class MovieVersion(ObjectWithCounter, AddableToDatabase):
         while not can_movie_version_be_shown_in_room(movie_version, room):
             movie_version: MovieVersion = random.choice(movie_versions)
         return movie_version
+
+    def get_movie_version_details(self):
+        details = f"{self.dimension.value}\t"
+        if self.fk_dubbing_language.value is not None:
+            details += f"dubbing: {self.languages[self.fk_dubbing_language.value].language_name.value}\t"
+        if self.fk_subtitles_language.value is not None:
+            details += f"subtitles: {self.languages[self.fk_subtitles_language.value].language_name.value}\t"
+        if self.fk_voice_over_language.value is not None:
+            details += f"voice_over: {self.languages[self.fk_voice_over_language.value].language_name.value}\t"
+        return details + "\n"
 
 
 def can_movie_version_be_shown_in_room(movie_version: MovieVersion, room: Room):
