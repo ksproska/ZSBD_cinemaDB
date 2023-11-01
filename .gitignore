@@ -1,2 +1,4 @@
 /.idea/
 /db_generation/test.py
+/db_generation/volume_data/TEST.dmp
+/db_generation/volume_data/backup/

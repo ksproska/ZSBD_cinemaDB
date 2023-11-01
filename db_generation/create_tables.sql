@@ -37,6 +37,7 @@ CREATE TABLE Movies
     premiere           DATE,
     duration           NUMBER                                    NOT NULL,
     is_imax            VARCHAR2(1) CHECK (is_imax IN ('Y', 'N')) NOT NULL,
+    description        VARCHAR2(4000),
     fk_age_restriction VARCHAR2(50),
     fk_language        VARCHAR2(50),
 
