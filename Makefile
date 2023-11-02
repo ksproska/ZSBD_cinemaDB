@@ -1,7 +1,7 @@
 create-container:
 	docker run -d -p 1521:1521 -e ORACLE_PASSWORD=test --name oracle -v vol:/vol gvenzl/oracle-xe
 
-init: create-container import_data python
+init: create-container import_data
 
 stop:
 	docker stop oracle
@@ -26,10 +26,25 @@ python:
 connect:
 	docker exec --interactive --tty oracle sh
 
+run-measurement:
+	docker exec oracle sh /vol/time.sh
+
+take-average:  python
+	docker exec oracle python3 /vol/average.py
+
+init-db:
+	docker exec oracle sh /vol/init.sh
+
+restore:
+	docker exec oracle sh /vol/restore.sh
+
+drop-container: stop
+	docker rm oracle
+
 pod-create-container:
 	podman run -d -p 1521:1521 -e ORACLE_PASSWORD=test --name oracle -v vol:/vol docker.io/gvenzl/oracle-xe
 
-pod-init: pod-create-container pod-python pod-import_data
+pod-init: pod-create-container pod-import_data
 
 pod-stop:
 	podman stop oracle
@@ -52,3 +67,18 @@ pod-connect:
 
 pod-python:
 	podman exec -u=0 oracle microdnf install python3
+
+pod-run-measurement:
+	podman exec oracle sh /vol/time.sh
+
+pod-take-average:  pod-python
+	podman exec oracle python3 /vol/average.py
+
+pod-init-db:
+	podman exec oracle sh /vol/init.sh
+
+pod-restore:
+	podman exec oracle sh /vol/restore.sh
+
+pod-drop-container: pod-stop
+	podman rm oracle

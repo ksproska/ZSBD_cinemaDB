@@ -1,4 +1,4 @@
 #!/bin/bash
 
-exit | sqlplus system/test @create_user.sql
-sh import.sh
+exit | sqlplus system/test @/vol/create_user.sql
+sh /vol/import.sh

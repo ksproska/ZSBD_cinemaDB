@@ -1,2 +1,2 @@
-sqlplus test/test @drop_tables.sql
-sh import.sh
+sqlplus test/test @/vol/drop_tables.sql
+sh /vol/import.sh
