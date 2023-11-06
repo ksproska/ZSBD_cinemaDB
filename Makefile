@@ -13,11 +13,10 @@ restart: stop start
 
 import_data:
 	mkdir import
-	cp db_generation/create_user.sql db_generation/volume_data/*.py db_generation/volume_data/*.sh db_generation/volume_data/*.sql db_generation/volume_data/*.dmp import/
-	cd import
-	tar cf data.tar *
-	docker volume import vol data.tar
-	cd ..
+	cp db_generation/create_user.sql db_generation/drop_tables.sql db_generation/volume_data/*.py db_generation/volume_data/*.sh db_generation/volume_data/*.sql db_generation/volume_data/*.dmp import/
+	cd import && \
+		tar cf data.tar * && \
+		podman volume import vol data.tar
 	rm -rf import
 
 python:
