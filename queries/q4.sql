@@ -1,4 +1,5 @@
 -- Pokaż sale, w których można zaplanować projekcję danego filmu dla zadanej liczby osób i danego tytułu w zadanym przedziale czasowym
+-- :required_seats = 10 :movie_name = 'The Godfather' :start_timestamp = TIMESTAMP '2023-07-24 8:00:00' :end_timestamp = TIMESTAMP '2023-12-30 20:44:00'
 WITH ROOM_CAPACITY AS (SELECT ID_ROOM, ROOM_SIGN, IMAX_CAPABLE, CAPABLE_3D
                        FROM ROOMS
                                 JOIN SEATS ON ROOMS.ID_ROOM = SEATS.FK_ROOM

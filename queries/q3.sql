@@ -1,5 +1,4 @@
--- Oblicz przychód z poszczególnych wersji językowych (faktyczny przychód oraz różnica ze względu na zniżki)
--- dla różnych filmów
+-- Oblicz przychód z poszczególnych wersji językowych (faktyczny przychód oraz różnica ze względu na zniżki) dla różnych filmów
 SELECT NAME,
        CAST(SUM(BASE_PRICE * (1 - DISCOUNT)) AS NUMBER(10, 2)) AS TOTAL_INCOME,
        CAST(SUM(BASE_PRICE * DISCOUNT) AS NUMBER(10, 2))       AS TOTAL_DISCOUNT_VALUE,

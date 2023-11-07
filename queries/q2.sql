@@ -1,5 +1,5 @@
--- Wyświetl statystyki zajęcia siedzeń według filmów,
--- czasu i typu siedzeń (VIP/normalne, połączone/pojedyńcze).
+-- Wyświetl statystyki zajęcia siedzeń według filmów, czasu i typu siedzeń (VIP/normalne, połączone/pojedyńcze).
+-- :year = 2023
 SELECT MOVIES.NAME                                                   AS MOVIE_TITLE,
        EXTRACT(MONTH FROM SHOW_DATE)                                 AS SHOW_START_MONTH,
        START_HOUR                                                    AS SHOW_START_HOUR,

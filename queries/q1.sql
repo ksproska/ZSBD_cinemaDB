@@ -1,5 +1,5 @@
--- Wyświetl wszystkie wolne miejsca na seanse
--- rozpoczynające się w od danej godziny i minuty do max zadanego przedziału w godzinach
+-- Wyświetl wszystkie wolne miejsca na seanse rozpoczynające się w od danej godziny i minuty do max zadanego przedziału w godzinach
+-- :show_date = '2023-07-25' :start_hour = 8 :start_minutes = 0 :seek_length_hours = 60
 WITH SELECTED_SHOWS(ID_SHOW, ID_ROOM, START_TIME, ID_SEAT, SEAT_ROW, SEAT_NUMBER, IS_VIP_SEAT, IS_DOUBLE_SEAT, ID_TICKET)
          AS (SELECT ID_SHOW                                                           AS ID_SHOW,
                     ID_ROOM,
