@@ -111,5 +111,5 @@ CREATE TABLE Tickets
     FOREIGN KEY (fk_show)
         REFERENCES Shows (id_show),
     FOREIGN KEY (fk_user)
-        REFERENCES CinemaUsers (id_user)
+        REFERENCES CinemaUsers (id_user) ON DELETE SET NULL
 );
