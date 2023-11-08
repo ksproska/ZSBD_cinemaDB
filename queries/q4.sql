@@ -1,14 +1,14 @@
 -- Pokaż sale, w których można zaplanować projekcję danego filmu dla zadanej liczby osób i danego tytułu w zadanym przedziale czasowym
--- :required_seats = 10 :movie_name = 'The Godfather' :start_timestamp = TIMESTAMP '2023-07-24 8:00:00' :end_timestamp = TIMESTAMP '2023-12-30 20:44:00'
+-- &1:required_seats = 10 &2:movie_name = 'The Godfather' &3:start_timestamp = TIMESTAMP '2023-07-24 8:00:00' &4:end_timestamp = TIMESTAMP '2023-12-30 20:44:00'
 WITH ROOM_CAPACITY AS (SELECT ID_ROOM, ROOM_SIGN, IMAX_CAPABLE, CAPABLE_3D
                        FROM ROOMS
                                 JOIN SEATS ON ROOMS.ID_ROOM = SEATS.FK_ROOM
                        GROUP BY ID_ROOM, ROOM_SIGN, IMAX_CAPABLE, CAPABLE_3D
-                       HAVING COUNT(DISTINCT ID_SEAT) > :required_seats),
+                       HAVING COUNT(DISTINCT ID_SEAT) > '&1'),
      AVAILABLE_MOVIE_VERSIONS AS (SELECT NAME AS MOVIE_TITLE, DURATION, IS_IMAX, M.DIMENSION
                                   FROM MOVIES
                                            JOIN MOVIEVERSIONS M on MOVIES.ID_MOVIE = M.FK_MOVIE
-                                  WHERE MOVIES.NAME = :movie_name),
+                                  WHERE MOVIES.NAME = '&2'),
      CAPABLE_ROOMS_FOR_MOVIE AS (SELECT DISTINCT ID_ROOM, ROOM_SIGN, DURATION
                                  FROM AVAILABLE_MOVIE_VERSIONS,
                                       ROOM_CAPACITY
@@ -35,8 +35,8 @@ WITH ROOM_CAPACITY AS (SELECT ID_ROOM, ROOM_SIGN, IMAX_CAPABLE, CAPABLE_3D
                                                      END_DATE,
                                                      DURATION
                                               FROM SHOWS_START_END_TIMESTAMPS
-                                              WHERE END_DATE >= :start_timestamp
-                                                AND START_DATE <= :end_timestamp),
+                                              WHERE END_DATE >= TIMESTAMP '&3'
+                                                AND START_DATE <= TIMESTAMP '&4'),
      SHOW_INTERVALS AS (SELECT RS1.ROOM_ID,
                                RS1.END_DATE                                               AS BEGIN_TIME,
                                NUMTODSINTERVAL(MIN(RS2.START_DATE - RS1.END_DATE), 'DAY') AS BREAK_BETWEEN_SHOWS

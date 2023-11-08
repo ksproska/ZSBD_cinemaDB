@@ -13,23 +13,19 @@ restart: stop start
 
 import_data:
 	mkdir import
-	cp db_generation/create_user.sql db_generation/drop_tables.sql db_generation/volume_data/*.py db_generation/volume_data/*.sh db_generation/volume_data/*.sql db_generation/volume_data/*.dmp import/
+	cp db_generation/create_user.sql db_generation/drop_tables.sql import/
+	cp volume_data/*.sh volume_data/*.sql volume_data/*.dmp import/
+	cp queries/* import/
 	cd import && \
 		tar cf data.tar * && \
 		podman volume import vol data.tar
 	rm -rf import
-
-python:
-	docker exec -u=0 oracle microdnf install python3
 
 connect:
 	docker exec --interactive --tty oracle sh
 
 run-measurement:
 	docker exec oracle sh /vol/time.sh
-
-take-average:  python
-	docker exec oracle python3 /vol/average.py
 
 init-db:
 	docker exec oracle sh /vol/init.sh
@@ -55,7 +51,9 @@ pod-restart: pod-stop pod-start
 
 pod-import_data:
 	mkdir import
-	cp db_generation/create_user.sql db_generation/drop_tables.sql db_generation/volume_data/*.py db_generation/volume_data/*.sh db_generation/volume_data/*.sql db_generation/volume_data/*.dmp import/
+	cp db_generation/create_user.sql db_generation/drop_tables.sql import/
+	cp volume_data/*.sh volume_data/*.sql volume_data/*.dmp import/
+	cp queries/* import/
 	cd import && \
 		tar cf data.tar * && \
 		podman volume import vol data.tar
@@ -64,14 +62,11 @@ pod-import_data:
 pod-connect:
 	podman exec --interactive --tty oracle sh
 
-pod-python:
-	podman exec -u=0 oracle microdnf install python3
-
 pod-run-measurement:
 	podman exec oracle sh /vol/time.sh
 
-pod-take-average:  pod-python
-	podman exec oracle python3 /vol/average.py
+pod-take-average:
+	podman exec oracle cat /vol/clear_res.txt | python3 average.py
 
 pod-init-db:
 	podman exec oracle sh /vol/init.sh

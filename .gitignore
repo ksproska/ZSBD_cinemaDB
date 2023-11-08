@@ -1,6 +1,5 @@
 /.idea/
 /db_generation/test.py
-/db_generation/volume_data/TEST.dmp
-/db_generation/volume_data/backup/
+/volume_data/TEST.dmp
+/volume_data/backup/
 /db_generation/output.sql
-

@@ -1,0 +1,18 @@
+spool /vol/res.txt;
+set feedback only;
+set timing on;
+@@/vol/q1.sql '2023-07-25' 8 0 600;
+@@/vol/q2.sql 2023;
+@@/vol/q3.sql;
+@@/vol/q4.sql 10 'The Godfather' '2023-07-24 8:00:00' '2023-12-30 20:44:00';
+@@/vol/delete.sql '2024-01-17';
+set timing off;
+rollback;
+set timing on;
+@@/vol/insert.sql '2024-01-17';
+set timing off;
+rollback;
+set timing on;
+@@/vol/update.sql '2024-01-17';
+set timing off;
+rollback;
