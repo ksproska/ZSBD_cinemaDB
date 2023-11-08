@@ -15,6 +15,6 @@ BEGIN
                           FROM TICKETS
                                    JOIN SHOWS on TICKETS.FK_SHOW = SHOWS.ID_SHOW
                           WHERE TO_DATE(:cutoff_date, 'yyyy-mm-dd') < SHOW_DATE
-                            AND FK_USER IS NOT NULL);
+                            AND FK_USER IS NOT NULL GROUP BY FK_USER);
     commit;
 END;
