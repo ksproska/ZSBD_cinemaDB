@@ -14,5 +14,6 @@ res = ''.join(sys.stdin.readlines())
 res_array = list(map(lambda x: list(map(get_millis, re.findall(r'E.*', x))), res.split('-----')[:-1]))
 average = [round(sum(x) / len(x)) for x in zip(*res_array)]
 
+print(f'Average from {len(res_array)} tests')
 for name, avg in dict(zip(names, average)).items():
-    print(f'{name}: {avg}')
+    print(f'{name}: {avg} ms')
