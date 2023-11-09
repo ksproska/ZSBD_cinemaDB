@@ -1,7 +1,7 @@
 -- Grupie z ostatniego seansu bardzo się spodobało siedzenie we własnym towarzystwie, więc postanowili sobie zarezerwować
 -- w najbliższym dostępnym terminie maraton śmierci: wszystkie filmy, jakie da się w tej sali wyświetlić po kolei,
 -- w dowolnej wersji językowej.
--- :selected_show = 126
+-- :selected_show = 15876
 
 INSERT INTO TICKETS SELECT LAST_ID_TICKET + ROWNUM AS ID_TICKET,
        DISCOUNT,
