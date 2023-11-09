@@ -15,3 +15,8 @@ na sali są na podwójnych kanapach. Specjalnie oznaczone miejsca mają podwyżs
 cenę.
 
 ![img.png](schema.png)
+
+1. Dodaj plik [TEST.dmp](https://drive.google.com/drive/folders/15HuhsffRxjsD-GPD9ZBhHe51mn2Gkg8j) do folderu db_generation/volume_data.
+2. Uruchom container bazy oraz przygotuj volumeny poprzez uruchomienie `make pod-init`
+3. Następnie załaduj dane do bazy poprzez uruchomienie `make pod-init-db`
+4. Uruchom mierzenie czasu `make pod-run-measurement`
