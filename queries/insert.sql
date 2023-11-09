@@ -1,7 +1,7 @@
 -- Grupie z ostatniego seansu bardzo się spodobało siedzenie we własnym towarzystwie, więc postanowili sobie zarezerwować
 -- w najbliższym dostępnym terminie maraton śmierci: wszystkie filmy, jakie da się w tej sali wyświetlić po kolei,
 -- w dowolnej wersji językowej.
--- :selected_show = 126
+-- :selected_show = 15876
 INSERT INTO SHOWS (ID_SHOW, SHOW_DATE, START_HOUR, START_MINUTE, FK_ROOM, FK_MOVIE_VERSION)
 WITH MOVIE_VERSIONS_FOR_ROOM AS (
 -- all movie versions with durations
