@@ -1,7 +1,7 @@
 import re
 import sys
 
-names = ['q1', 'q2', 'q3', 'q4', 'update', 'insert1', 'insert2', 'delete']
+names = ['q1', 'q2', 'q3', 'q4', 'update', 'insert', 'delete']
 
 
 def get_millis(x):
@@ -13,7 +13,17 @@ res = ''.join(sys.stdin.readlines())
 
 res_array = list(map(lambda x: list(map(get_millis, re.findall(r'E.*', x))), res.split('-----')[:-1]))
 average = [round(sum(x) / len(x)) for x in zip(*res_array)]
+min_res = [min(x) for x in zip(*res_array)]
+max_res = [max(x) for x in zip(*res_array)]
 
 print(f'Average from {len(res_array)} tests')
-for name, avg in dict(zip(names, average)).items():
-    print(f'{name}: {avg} ms')
+for name, x in dict(zip(names, average)).items():
+    print(f'{name}: {x} ms')
+
+print(f'\nMin from {len(res_array)} tests')
+for name, x in dict(zip(names, min_res)).items():
+    print(f'{name}: {x} ms')
+
+print(f'\nMax from {len(res_array)} tests')
+for name, x in dict(zip(names, max_res)).items():
+    print(f'{name}: {x} ms')

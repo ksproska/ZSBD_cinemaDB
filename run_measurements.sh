@@ -1,3 +1,3 @@
-for i in $(seq 8); do
+for i in $(seq 7); do
   make pod-run-measurement
 done
