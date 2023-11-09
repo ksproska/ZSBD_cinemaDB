@@ -1,4 +1,3 @@
--- :treshold = 0.05 :from_date = 2023-12-25 :days_postponed = 300
 UPDATE SHOWS
 SET (FK_MOVIE_VERSION, SHOW_DATE) = (
     SELECT NEW_MOVIE_VERSION, NEW_SHOW_DATE
@@ -6,7 +5,7 @@ SET (FK_MOVIE_VERSION, SHOW_DATE) = (
          SELECT
              SHOWS.ID_SHOW,
              CASE WHEN NEW_SHOW_DATE IS NOT NULL THEN NEW_SHOW_DATE ELSE SHOW_DATE END AS NEW_SHOW_DATE,
-             CASE WHEN OCCUPIED_PERCENTAGE < :treshold AND ALT_MOVIE_VERSION IS NOT NULL THEN ALT_MOVIE_VERSION ELSE ID_MOVIE_VERSION END AS NEW_MOVIE_VERSION
+             CASE WHEN OCCUPIED_PERCENTAGE < '&1' AND ALT_MOVIE_VERSION IS NOT NULL THEN ALT_MOVIE_VERSION ELSE ID_MOVIE_VERSION END AS NEW_MOVIE_VERSION
          FROM SHOWS
                  LEFT JOIN (
              SELECT MV1.ID_MOVIE_VERSION, MIN(MV2.ID_MOVIE_VERSION) AS ALT_MOVIE_VERSION
@@ -26,7 +25,7 @@ SET (FK_MOVIE_VERSION, SHOW_DATE) = (
                   LEFT JOIN (
                      SELECT
                          SHOWS.ID_SHOW,
-                         SHOW_DATE + NUMTODSINTERVAL(:days_postponed,'DAY') AS NEW_SHOW_DATE
+                         SHOW_DATE + NUMTODSINTERVAL('&2','DAY') AS NEW_SHOW_DATE
                      FROM SHOWS
                               JOIN MOVIEVERSIONS ON ID_MOVIE_VERSION = FK_MOVIE_VERSION
                               JOIN (SELECT ID_SHOW,
@@ -37,13 +36,13 @@ SET (FK_MOVIE_VERSION, SHOW_DATE) = (
                       LEFT JOIN TICKETS ON TICKETS.FK_SHOW = SHOWS.ID_SHOW AND TICKETS.FK_SEAT = SEATS.ID_SEAT
              GROUP BY ID_SHOW) OCCUPIED_STATS ON OCCUPIED_STATS.ID_SHOW = SHOWS.ID_SHOW
                      WHERE
-                             OCCUPIED_PERCENTAGE > :treshold
+                             OCCUPIED_PERCENTAGE > '&1'
                        AND DIMENSION = '3D'
                  ) RESCHEDULED ON RESCHEDULED.ID_SHOW = SHOWS.ID_SHOW
          WHERE
-                 SHOW_DATE > TO_DATE(:from_date,'yyyy-mm-dd')
+                 SHOW_DATE > TO_DATE('&3','yyyy-mm-dd')
         ) SHOWS_TO_SET
     WHERE SHOWS.ID_SHOW = SHOWS_TO_SET.ID_SHOW
 )
 WHERE
-    SHOW_DATE > TO_DATE(:from_date,'yyyy-mm-dd');
+    SHOW_DATE > TO_DATE('&3','yyyy-mm-dd');
