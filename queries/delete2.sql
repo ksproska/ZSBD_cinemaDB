@@ -4,5 +4,5 @@ DELETE
         SELECT ID_TICKET
         FROM TICKETS
             JOIN SHOWS on TICKETS.FK_SHOW = SHOWS.ID_SHOW
-        WHERE TO_DATE(:date, 'yyyy-mm-dd') < SHOW_DATE
+        WHERE TO_DATE('&1', 'yyyy-mm-dd') < SHOW_DATE
     );

@@ -1,7 +1,7 @@
 import re
 import sys
 
-names = ['q1', 'q2', 'q3', 'q4', 'delete-1', 'delete-2', 'insert', 'update']
+names = ['q1', 'q2', 'q3', 'q4', 'update', 'insert1', 'insert2', 'delete']
 
 
 def get_millis(x):
