@@ -16,9 +16,7 @@ import_data:
 	cp db_generation/create_user.sql db_generation/drop_tables.sql import/
 	cp volume_data/*.sh volume_data/*.sql volume_data/*.dmp import/
 	cp queries/* import/
-	cd import && \
-		tar cf data.tar * && \
-		podman volume import vol data.tar
+	docker cp import/ oracle:/vol
 	rm -rf import
 
 connect:
