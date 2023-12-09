@@ -25,6 +25,9 @@ connect:
 run-measurement:
 	docker exec oracle sh /vol/time.sh
 
+take-average:
+	docker exec oracle cat /vol/clear_res.txt | py average.py
+
 init-db:
 	docker exec oracle sh /vol/init.sh
 
