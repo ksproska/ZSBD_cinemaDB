@@ -74,3 +74,13 @@ pod-restore:
 
 pod-drop-container: pod-stop
 	podman rm oracle
+
+pod-part-import_data:
+	mkdir import
+	cp db_generation/create_user.sql db_generation/drop_tables.sql import/
+	cp volume_data/*.sh volume_data/*.sql volume_data/*.dmp import/
+	cp queries/* import/
+	cd import && \
+		tar cf data.tar * && \
+		podman volume import vol2 data.tar
+	rm -rf import
