@@ -11,6 +11,7 @@ start:
 
 restart: stop start
 
+#doesn't work in powershell
 import_data:
 	mkdir import
 	cp db_generation/create_user.sql db_generation/drop_tables.sql import/
