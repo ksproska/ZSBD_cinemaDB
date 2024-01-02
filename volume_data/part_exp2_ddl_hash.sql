@@ -79,9 +79,7 @@ CREATE TABLE Shows
         REFERENCES Rooms (id_room),
     FOREIGN KEY (fk_movie_version)
         REFERENCES MovieVersions (id_movie_version)
-)
-PARTITION BY HASH (id_show)
-PARTITIONS 8;
+);
 
 CREATE TABLE Seats
 (
@@ -116,6 +114,8 @@ CREATE TABLE Tickets
         REFERENCES CinemaUsers (id_user) ON DELETE SET NULL
 )
 PARTITION BY HASH (fk_show)
+    SUBPARTITION BY HASH (fk_seat)
+    SUBPARTITIONS 8
 PARTITIONS 8;
 
 -- subpartition by hash (fk_seat)

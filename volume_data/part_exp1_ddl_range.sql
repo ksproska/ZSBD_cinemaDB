@@ -22,10 +22,6 @@ CREATE TABLE Rooms
     wheelchair_availability VARCHAR2(1) CHECK (wheelchair_availability IN ('Y', 'N')) NOT NULL,
     sponsor                 VARCHAR2(50),
     capable_3D              VARCHAR2(1) CHECK (capable_3D IN ('Y', 'N'))              NOT NULL
-)
-partition by list (capable_3D)(
-    partition part_2d values ('N'),
-    partition part_3d values ('Y')
 );
 
 CREATE TABLE Languages
