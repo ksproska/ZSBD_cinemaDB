@@ -18,9 +18,10 @@ import_data:
 	cp queries/* import/
 	docker cp import/. oracle:/vol
 	rm -rf import
+	docker exec -u=0  oracle chown -R oracle /vol/
 
 connect:
-	docker exec --interactive --tty oracle sh
+	docker exec --interactive --tty oracle bash
 
 run-measurement:
 	docker exec oracle sh /vol/time.sh
