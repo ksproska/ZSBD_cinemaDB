@@ -1,0 +1,1 @@
+exit | sqlplus system/test @/vol/raport.sql
