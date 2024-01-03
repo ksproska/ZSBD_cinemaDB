@@ -19,7 +19,7 @@ import-data:
 	cp queries/* import/
 	docker cp import/. oracle:/vol
 	rm -rf import
-	docker exec -u=0  oracle chown -R oracle /vol/
+	docker exec -u=0 oracle chown -R oracle /vol/
 
 connect:
 	docker exec --interactive --tty oracle bash
