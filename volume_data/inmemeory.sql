@@ -1,1 +1,0 @@
-alter table TICKETS inmemory memcompress for query low no inmemory (PURCHASE)
