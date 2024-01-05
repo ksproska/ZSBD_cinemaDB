@@ -23,3 +23,8 @@ cenę.
 2. Uruchom container bazy oraz przygotuj volumeny poprzez uruchomienie `make pod-init`
 3. Następnie załaduj dane do bazy poprzez uruchomienie `make pod-init-db`
 4. Uruchom mierzenie czasu `make pod-run-measurement`
+
+
+Docker:
+1. `make init`
+2. `make init-db`

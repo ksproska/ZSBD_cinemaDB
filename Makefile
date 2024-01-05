@@ -1,7 +1,7 @@
 create-container:
 	docker run -d -p 1521:1521 -e ORACLE_PASSWORD=test --name oracle -v vol:/vol gvenzl/oracle-xe
 
-init: create-container import_data
+init: create-container import-data
 
 stop:
 	docker stop oracle
