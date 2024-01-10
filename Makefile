@@ -27,6 +27,9 @@ connect:
 run-measurement:
 	docker exec oracle sh /vol/time.sh
 
+run-measurement-10:
+	docker exec oracle sh /vol/run_measurements_docker.sh
+
 take-average:
 	docker exec oracle cat /vol/clear_res.txt | py average.py
 
@@ -44,5 +47,8 @@ run-raport:
 
 print-raport:
 	docker exec oracle cat /vol/res.txt | python3 raport.py
+
+print-raport-py:
+	docker exec oracle cat /vol/res.txt | py raport.py
 
 raport: run-raport print-raport
